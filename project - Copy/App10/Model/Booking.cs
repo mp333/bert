@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace App10.Model
 {
-    class Booking
+   public class Booking
     {
         private DateTime checkinDateTime;
         private DateTime checkoutDateTime;

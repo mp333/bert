@@ -12,6 +12,7 @@
     <RootPropertyPathName Name="List1" />
     <RootPropertyPathName Name="SelectedIndex" />
     <RootPropertyPathName Name="LoginCommand" />
+    <RootPropertyPathName Name="Books" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
@@ -95,6 +96,8 @@
       <RootProperty Name="Command" />
     </RootType>
     <RootType FullName="App10.View.BlankPage1" />
+    <RootType FullName="App10.ViewModel.BookingVM" />
+    <RootType FullName="App10.View.BookingPage" />
     <RootType FullName="App10.View.MainPage" />
   </Roots.RootTypes>
 </Roots>

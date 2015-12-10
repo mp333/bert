@@ -19,27 +19,27 @@ namespace App10.Persistency
     class PersistencyService
     {
         private static string JsonFileName = "CustomersAsJson.dat";
-
-        public static async void SaveNotesAsJsonAsync(ObservableCollection<Customer> list)
+        private static string JsonFileName2 = "BookingsAsJson.dat";
+        public static async void SaveCustomersAsJsonAsync(ObservableCollection<Customer> list) //customers
         {
-            string notesJsonString = JsonConvert.SerializeObject(list);
-            SerializeNotesFileAsync(notesJsonString, JsonFileName);
+            string customersJsonString = JsonConvert.SerializeObject(list);
+            SerializeNotesFileAsync(customersJsonString, JsonFileName);
         }
 
-        public static async Task<List<Customer>> LoadNotesFromJsonAsync()
+        public static async Task<List<Customer>> LoadCustomersFromJsonAsync()
         {
-            string notesJsonString = await DeserializeNotesFileAsync(JsonFileName);
-            if (notesJsonString != null)
+            string customersJsonString = await DeserializeNotesFileAsync(JsonFileName);
+            if (customersJsonString != null)
             {
-                return (List<Customer>)JsonConvert.DeserializeObject(notesJsonString, typeof(List<Customer>));
+                return (List<Customer>)JsonConvert.DeserializeObject(customersJsonString, typeof(List<Customer>));
             }
             return null;
         }
 
-        private static async void SerializeNotesFileAsync(string notesJsonString, string fileName)
+        private static async void SerializeNotesFileAsync(string notsJsonString, string fileName)
         {
             StorageFile localFile = await ApplicationData.Current.LocalFolder.CreateFileAsync(fileName, CreationCollisionOption.ReplaceExisting);
-            await FileIO.WriteTextAsync(localFile, notesJsonString);
+            await FileIO.WriteTextAsync(localFile, notsJsonString);
         }
 
 
@@ -52,11 +52,26 @@ namespace App10.Persistency
             }
             catch (FileNotFoundException ex)
             {
-               
+                MessageDialogHelper.Show("You have nothing booked", "File not Found");
                 return null;
             }
         }
 
+        public static async void SaveBookingsAsJsonAsync(ObservableCollection<Booking> list2) //Booking
+        {
+            string booksJsonString = JsonConvert.SerializeObject(list2);
+            SerializeNotesFileAsync(booksJsonString, JsonFileName2);
+        }
+
+        public static async Task<List<Booking>> LoadBookingsFromJsonAsync()
+        {
+            string customersJsonString = await DeserializeNotesFileAsync(JsonFileName2);
+            if (customersJsonString != null)
+            {
+                return (List<Booking>)JsonConvert.DeserializeObject(customersJsonString, typeof(List<Booking>));
+            }
+            return null;
+        }
 
         private class MessageDialogHelper
         {

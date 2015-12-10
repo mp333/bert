@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace App10.Model
 {
-    class Accomodation
+   public class Accomodation
     {   
         public int Adress { get; set; }
         public int Price { get; set; }

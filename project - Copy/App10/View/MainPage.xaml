@@ -5,10 +5,18 @@
     xmlns:local="using:App10.View"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:locas="using:App10.ViewModel"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Button x:Name="button" Click="button_Click" Content="Button" Height="111" Margin="120,84,0,0" VerticalAlignment="Top" Width="249"/>
 
+    <Page.DataContext>
+        <locas:CustomerList/>
+    </Page.DataContext>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        
+        <Button x:Name="button" Click="button_Click" Content="LogOut" Height="111" Margin="120,84,0,0" VerticalAlignment="Top" Width="249"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="25" Margin="565,20,0,0" TextWrapping="Wrap" Text= "{Binding CurrentCustomer, Mode=TwoWay}" VerticalAlignment="Top" Width="170"/>
+        <Button x:Name="button1" Content="Booking" HorizontalAlignment="Left" Height="111" Margin="390,84,0,0" VerticalAlignment="Top" Width="225" Click="button1_Click"/>
     </Grid>
 </Page>
