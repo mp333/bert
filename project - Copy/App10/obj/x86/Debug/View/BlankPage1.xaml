@@ -1,0 +1,47 @@
+﻿<Page
+    x:Class="App10.View.BlankPage1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App10.View"
+    xmlns:Interactivity="using:Microsoft.Xaml.Interactivity" 
+    xmlns:Core="using:Microsoft.Xaml.Interactions.Core"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:loca="using:App10.ViewModel"
+    xmlns:common="using:App10.Common"
+    mc:Ignorable="d">
+
+
+    <Page.DataContext>
+        <loca:CustomerList/>
+    </Page.DataContext>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <Button x:ConnectionId='1' x:Name="Login" Margin="20,20,0,0" Content="Login" FontSize="48" VerticalAlignment="Top" Width="253" Height="124" >
+            <Interactivity:Interaction.Behaviors>
+                <Core:EventTriggerBehavior EventName="Click">
+                    <Core:InvokeCommandAction Command="{Binding LoginCommand}"/>
+                </Core:EventTriggerBehavior>
+            </Interactivity:Interaction.Behaviors>
+        </Button>
+        <ListView Margin="337,256,0,0" Opacity ="100"  ItemsSource="{Binding List1}" SelectedIndex="{Binding SelectedIndex, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="314" Height="214" RenderTransformOrigin="0.498,0.529"/>
+
+        <Button x:ConnectionId='2' x:Name="Register" Margin="0,20,20,0" FontSize="48" Content="Register" HorizontalAlignment="Right" VerticalAlignment="Top" Width="234" Height="124">
+            <Interactivity:Interaction.Behaviors>
+                <Core:EventTriggerBehavior EventName="Click">
+                    <Core:InvokeCommandAction Command="{Binding AddCustomerCommand}"/>
+                </Core:EventTriggerBehavior>
+            </Interactivity:Interaction.Behaviors>
+        </Button>
+        <TextBox x:ConnectionId='3' x:Name="textBox" Text="{Binding Username ,Mode=TwoWay}" FontSize="24" HorizontalAlignment="Right" Height="48" Margin="0,272,20,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234"                                  />
+        <TextBox x:ConnectionId='4' x:Name="textBox1" Text="{Binding Password ,Mode=TwoWay}" FontSize="24" HorizontalAlignment="Right" Height="48" Margin="0,444,20,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="234"                                   />
+        <TextBox x:ConnectionId='5' x:Name="textBox3" Text="{Binding Username2 ,Mode=TwoWay}" HorizontalAlignment="Left" Height="64" Margin="20,256,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="234"                                   />
+        <TextBox x:ConnectionId='6' x:Name="textBox4" Text="{Binding Password2 ,Mode=TwoWay}"  HorizontalAlignment="Left" Height="59" Margin="20,433,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="234"                                    RenderTransformOrigin="0.505,0.54"/>
+        <Button x:ConnectionId='7' x:Name="button" Content="Continue!" Opacity="{Binding Success, Mode = TwoWay}" HorizontalAlignment="Left" Height="48" Margin="297,20,0,0" VerticalAlignment="Top" Width="202"                     />
+        <CheckBox x:ConnectionId='8' x:Name="checkBox" Content="Confirm" IsChecked="{Binding IsChecked, Mode=TwoWay}" HorizontalAlignment="Left" Height="31" Margin="297,81,0,0" VerticalAlignment="Top" Width="56"/>
+        <TextBlock x:ConnectionId='9' x:Name="textBlock" HorizontalAlignment="Left" Height="25" Margin="565,20,0,0" TextWrapping="Wrap" Text="{Binding CurrentCustomer, Mode=TwoWay}" VerticalAlignment="Top" Width="170"/>
+
+    </Grid>
+</Page>
+

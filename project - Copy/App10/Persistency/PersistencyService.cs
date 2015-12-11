@@ -52,7 +52,7 @@ namespace App10.Persistency
             }
             catch (FileNotFoundException ex)
             {
-                MessageDialogHelper.Show("You have nothing booked", "File not Found");
+               MessageDialogHelper.Show("Try registering/booking", "First time?");  //placeholder
                 return null;
             }
         }

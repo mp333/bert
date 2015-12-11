@@ -3,51 +3,39 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using App10.ViewModel;
 
 namespace App10.Model
 {
-   public class Booking
+    public class Booking
     {
-        private DateTime checkinDateTime;
-        private DateTime checkoutDateTime;
-        private DateTime orderDateTime;
-        private int orderID;
 
+
+
+        public string OrderedBy { get; set; }
+
+        public DateTime CheckInDateTime { get; set; }
+
+        public DateTime CheckOutDateTime { get; set; }
+        public DateTime OrderDateTime { get; set; }
         private static int c = 1;
+        public int NumberOfPpl { get; set; }
 
-        public Accomodation ThisAccomodation;
-
-        public int OrderID
+        public int BookNumber { get; set; }
+        public Booking(DateTime checkin, DateTime checkout, string ordered, int ppl)
         {
-            get { return orderID; }
-            set { orderID = value; }
-        }
-
-        public DateTime CheckInDateTime
-        {
-            get { return checkinDateTime; }
-            set { checkinDateTime = value; }
-        }
-
-        public DateTime CheckOutDateTime
-        {
-            get { return checkoutDateTime;}
-            set { checkoutDateTime = value; }
-        }
-
-        public DateTime OrderDateTime
-        {
-            get { return orderDateTime;}
-            set { orderDateTime = value; }
-        }
-
-        public Booking(DateTime checkin, DateTime checkout, Accomodation thisacc)
-        {
+            BookNumber = c++; // not using
             CheckInDateTime = checkin;
             CheckOutDateTime = checkout;
-            orderDateTime = DateTime.Now;
-            orderID = c++;
+            OrderDateTime = DateTime.Now;
+            OrderedBy = ordered; //placeholder
+            NumberOfPpl = ppl;
+            
         }
 
+        public override string ToString()
+        {
+            return string.Format("Number: {0}, Booked by: {1}, For {2} people, Booked on: {3}, From {4} to {5} ", BookNumber, OrderedBy, NumberOfPpl, OrderDateTime, CheckInDateTime, CheckOutDateTime);
+        }// in accom x
     }
 }

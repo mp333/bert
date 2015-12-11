@@ -13,7 +13,7 @@ using App10.ViewModel;
 
 namespace App10.ViewModel
 {
-    public class BookingVM : INotifyPropertyChanged
+    public class BookingVM : ViewModelBase
     {
         // properties
         // relaycommands and their methods
@@ -21,13 +21,149 @@ namespace App10.ViewModel
 
         public ObservableCollection<Booking> Books { get; set; }
 
+        public ObservableCollection<int> Numbers { get; set; } 
+
+        private DateTime czechin;
+        private DateTime czechout;
+        private TimeSpan dayspan; //placeholder
+        private bool isconfirmed;
+        private bool isallinc;
+        private int howmanyppl;
+        private int cost;
+        private int creditcard;
+
+        public int CreditCard
+        {
+            get { return creditcard; }
+            set
+            {
+                creditcard = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public DateTime CzechzIn
+        {
+            get
+            {
+                return czechin;
+            }
+            set
+            {
+                czechin = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public DateTime CzechOut
+        {
+            get { return czechout; }
+            set
+            {
+                czechout = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public TimeSpan DaySpan
+        {
+            get { return dayspan; }
+            set
+            {
+                DaySpan = value;
+                OnPropertyChanged();
+            }
+
+        } 
+
+        public bool IsConfirmed
+        {
+            get
+            {
+                return isconfirmed;
+            }
+            set
+            {
+                isconfirmed = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public bool IsAllInc
+        {
+            get { return isallinc;}
+            set
+            {
+                isallinc = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public int HowManyPpl
+        {
+            get { return howmanyppl;}
+            set
+            {
+                howmanyppl = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public int Cost
+        {
+            get { return cost; }
+            set
+            {
+                cost = value;
+                OnPropertyChanged();
+            }
+        }
+
+        private int success;
+
+        public int Success
+        {
+            get { return success; }
+            set
+            {
+                success = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public bool CanConfirm()
+        {
+            if (IsConfirmed)// && CreditCard>999 && Creditcard <10000 && HowManyPpl > 0 etc
+                return true;
+            else
+                return false;
+        }
+
+
+        public async void LoadMyBookings()
+        {
+
+            Books.Clear();
+            Success = 100;
+            var books = await PersistencyService.LoadBookingsFromJsonAsync();
+            if (books != null)
+            {
+
+                foreach (var book in books)
+                {
+                    if(book.OrderedBy == CurrentCustomer.Name) // filters only the bookings made by the logged in customer
+                    Books.Add(book);
+                }
+            }
+
+        }
         public BookingVM()
         {
-            AddBookingCommand = new RelayCommand(AddBooking);
-            GetBookCommand = new RelayCommand(LoadBookings);
+            AddBookingCommand = new RelayCommand(AddBooking, CanConfirm);
+            GetBookCommand = new RelayCommand(LoadMyBookings);
             Books = new ObservableCollection<Booking>();
-            //LoadBookings();
-            
+            LoadBookings();
+                  
         }
         public RelayCommand AddBookingCommand { get; set; }
         public RelayCommand GetBookCommand { get; set; }
@@ -35,38 +171,26 @@ namespace App10.ViewModel
         public async void LoadBookings()
         {
             Books.Clear();
+            
             var books = await PersistencyService.LoadBookingsFromJsonAsync();
-            foreach (var book in books)
+            if (books != null)
             {
-                Books.Add(book);
-            }
 
+                foreach (var book in books)
+                {
+  
+                    Books.Add(book);
+                }
+            }
         }
+
+
         public void AddBooking()
         {
 
-         //   Books.Add(new Booking());
+            Books.Add(new Booking(CzechzIn, CzechOut, CurrentCustomer.Name, HowManyPpl+1));
             PersistencyService.SaveBookingsAsJsonAsync(Books);
         }
 
-        private static string currentCustomer2;
-        /// <summary>
-        /// idk wtf 2 datacontext
-        
-        /// </summary>
-        public string CurrentCustomer2
-        {
-            get { return currentCustomer2; }
-            set { currentCustomer2 = value; }
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
-        {
-            PropertyChangedEventHandler handler = PropertyChanged;
-
-
-            if (handler != null) handler(this, new PropertyChangedEventArgs(propertyName));
-        }
     }
 }
