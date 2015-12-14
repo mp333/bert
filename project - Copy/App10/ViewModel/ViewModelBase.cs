@@ -9,18 +9,29 @@ using App10.Model;
 
 namespace App10.ViewModel
 {
-   public abstract class ViewModelBase : INotifyPropertyChanged  //this class sets the name of the last person who logged in as the current customer
+   public abstract class ViewModelBase : INotifyPropertyChanged 
     {
-        private static Customer currentCustomer;
-
-       public Customer CurrentCustomer
-       {
+       private static Customer currentCustomer;
+       private static Accomodation currentAccomodation;
+       public Customer CurrentCustomer     //this class sets a Customer object of the last person who logged in as the current customer
+        {
            get { return currentCustomer; }
            set
            {
                currentCustomer = value;
                OnPropertyChanged();
            }
+       }
+
+       public Accomodation CurrentAccomodation  // this one sets the current accomodation object to the last selected accomodation
+       {
+           get { return currentAccomodation; }
+           set
+           {
+               currentAccomodation = value;
+               OnPropertyChanged();
+           }
+           
        }
 
        public event PropertyChangedEventHandler PropertyChanged;

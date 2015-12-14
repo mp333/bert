@@ -104,6 +104,7 @@
     <Compile Include="Model\Booking.cs" />
     <Compile Include="Model\Customer.cs" />
     <Compile Include="Persistency\PersistencyService.cs" />
+    <Compile Include="ViewModel\AccomodationVM.cs" />
     <Compile Include="ViewModel\BookingVM.cs" />
     <Compile Include="ViewModel\CustomerList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

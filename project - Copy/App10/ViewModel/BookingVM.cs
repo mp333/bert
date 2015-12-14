@@ -6,10 +6,12 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.ApplicationModel.AppService;
 using App10.Model;
 using App10.Common;
 using App10.Persistency;
 using App10.ViewModel;
+using Windows.UI.Popups;
 
 namespace App10.ViewModel
 {
@@ -21,17 +23,60 @@ namespace App10.ViewModel
 
         public ObservableCollection<Booking> Books { get; set; }
 
-        public ObservableCollection<int> Numbers { get; set; } 
+        public ObservableCollection<int> Numbers { get; set; }
+        
+        private DateTimeOffset czechin = new DateTimeOffset(DateTime.Today);
+        public DateTimeOffset czechout = new DateTimeOffset(DateTime.Today);
 
-        private DateTime czechin;
-        private DateTime czechout;
-        private TimeSpan dayspan; //placeholder
+        public DateTimeOffset CzechOut
+        {
+            get
+            {
+                return czechout;
+            }
+            set
+            {
+                czechout = value;
+                OnPropertyChanged();
+            }
+        }
+        public DateTimeOffset CzechIn
+        {
+            get
+            {
+                return czechin;
+            }
+            set { czechin = value;
+                OnPropertyChanged(); }
+        }
+ //placeholder
         private bool isconfirmed;
         private bool isallinc;
-        private int howmanyppl;
+        private int howmanyppl =1;
         private int cost;
         private int creditcard;
+        private DateTime chekins;
+        private DateTime chekaus;
 
+        public DateTime ChekIns
+        {
+            get { return chekins; }
+            set
+            {
+                chekins = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public DateTime ChekAus
+        {
+            get { return chekaus; }
+            set
+            {
+                chekaus = value;
+                OnPropertyChanged();
+            }
+        }
         public int CreditCard
         {
             get { return creditcard; }
@@ -42,39 +87,8 @@ namespace App10.ViewModel
             }
         }
 
-        public DateTime CzechzIn
-        {
-            get
-            {
-                return czechin;
-            }
-            set
-            {
-                czechin = value;
-                OnPropertyChanged();
-            }
-        }
 
-        public DateTime CzechOut
-        {
-            get { return czechout; }
-            set
-            {
-                czechout = value;
-                OnPropertyChanged();
-            }
-        }
 
-        public TimeSpan DaySpan
-        {
-            get { return dayspan; }
-            set
-            {
-                DaySpan = value;
-                OnPropertyChanged();
-            }
-
-        } 
 
         public bool IsConfirmed
         {
@@ -133,10 +147,38 @@ namespace App10.ViewModel
 
         public bool CanConfirm()
         {
-            if (IsConfirmed)// && CreditCard>999 && Creditcard <10000 && HowManyPpl > 0 etc
+            if (IsConfirmed && DateCalc() && DateCalc2() && HowManyPpl>-1 && CreditCard>0)
+                return true;
+            else
+            {
+                return false;
+            }
+        }
+
+
+        public bool DateCalc()
+        {
+            ChekIns = CzechIn.DateTime;
+            ChekAus = CzechOut.DateTime;   
+            if (ChekIns < ChekAus && ChekIns > DateTime.Today)
                 return true;
             else
                 return false;
+        }
+
+        
+        public bool DateCalc2()
+        {
+            ChekIns = CzechIn.DateTime;
+            ChekAus = CzechOut.DateTime;
+            int xx = 1;
+            foreach (Booking book in Books)
+            {
+                
+                if (book.CheckInDateTime < ChekAus.Date && ChekIns.Date < book.CheckOutDateTime)
+                    xx++;
+            }
+            return xx < 2;
         }
 
 
@@ -157,10 +199,13 @@ namespace App10.ViewModel
             }
 
         }
+
+        
         public BookingVM()
-        {
+        {   HandleCommand = new RelayCommand(HandleEx);
             AddBookingCommand = new RelayCommand(AddBooking, CanConfirm);
             GetBookCommand = new RelayCommand(LoadMyBookings);
+            
             Books = new ObservableCollection<Booking>();
             LoadBookings();
                   
@@ -168,6 +213,8 @@ namespace App10.ViewModel
         public RelayCommand AddBookingCommand { get; set; }
         public RelayCommand GetBookCommand { get; set; }
 
+   
+        public RelayCommand HandleCommand { get; set; }
         public async void LoadBookings()
         {
             Books.Clear();
@@ -178,18 +225,60 @@ namespace App10.ViewModel
 
                 foreach (var book in books)
                 {
-  
-                    Books.Add(book);
+                    if (book.ThisAccomodation.Equals(CurrentAccomodation)) //    if(book.OrderedBy == CurrentCustomer.Name) place
+                    {
+                        Books.Add(book);
+                    }
                 }
             }
         }
 
 
+        public void HandleEx()
+        {
+            if (DateCalc() && DateCalc2() && HowManyPpl + 1 > 0 && CreditCard > 0)
+            {
+                TimeSpan xx = CzechOut.Subtract(CzechIn);
+                if (IsAllInc)
+                {
+                    Cost = CurrentAccomodation.Price * 2 * (HowManyPpl + 1) * xx.Days;
+                }
+                else if (IsAllInc != true)
+                {
+                    Cost = CurrentAccomodation.Price * (HowManyPpl + 1) * xx.Days;
+                }
+                IsConfirmed = true;
+            }
+            else if(DateCalc2() == false)
+            {
+                IsConfirmed = false;
+                MessageDialogHelper.Show(" Those Dates are already booked", "Invalid Dates");
+            }
+            else if (DateCalc() == false)
+            {
+                MessageDialogHelper.Show("Booking must be in the future and", "Invalid Dates");
+            }
+            else if (HowManyPpl+1==0 || CreditCard >0 == false)
+            {
+                MessageDialogHelper.Show(" Please fill out your info", "Invalid Info");
+            }
+        }
+
         public void AddBooking()
         {
 
-            Books.Add(new Booking(CzechzIn, CzechOut, CurrentCustomer.Name, HowManyPpl+1));
+            Books.Add(new Booking(CurrentAccomodation, CzechIn.Date, CzechOut.Date, CurrentCustomer.Name, HowManyPpl+1));
             PersistencyService.SaveBookingsAsJsonAsync(Books);
+            IsConfirmed = false;
+        }
+
+        private class MessageDialogHelper
+        {
+            public static async void Show(string content, string title)
+            {
+                MessageDialog messageDialog = new MessageDialog(content, title);
+                await messageDialog.ShowAsync();
+            }
         }
 
     }

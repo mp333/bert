@@ -31,5 +31,7 @@ namespace App10.View
         {
             Frame.Navigate(typeof (MyBookings));
         }
+
+
     }
 }

@@ -8,16 +8,23 @@ namespace App10.Model
 {
    public class Accomodation
     {   
-        public int Adress { get; set; }
+        public string Adress { get; set; }
         public int Price { get; set; }
 
-        public Accomodation(int adress, int price)
+        public string AccName { get; set; }
+        public Accomodation(string acname,int price)
         {
-            Adress = adress;
+            AccName = acname;
+            Adress = "go here: blabla";
             Price = price;
         }
 
-        Accomodation _lyon = new Accomodation(12313, 600);
+        public override string ToString()
+        {
+            return string.Format("{0}",AccName);
+        }// in accom x
+
+       
         //etc.
     }
 }

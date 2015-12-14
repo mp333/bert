@@ -2248,4 +2248,3 @@ C:\Users\pc\Desktop\project - Copy\App10\obj\x86\Debug\View\MyBookings.g.cs
 C:\Users\pc\Desktop\project - Copy\App10\obj\x86\Debug\View\MyBookings.xaml
 C:\Users\pc\Desktop\project - Copy\App10\obj\x86\Debug\View\MyBookings.xbf
 C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\View\MyBookings.xbf
-C:\Users\pc\Desktop\project - Copy\App10\obj\x86\Debug\App10.csprojResolveAssemblyReference.cache

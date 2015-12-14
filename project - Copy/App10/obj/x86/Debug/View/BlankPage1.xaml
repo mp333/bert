@@ -38,7 +38,7 @@
         <TextBox x:ConnectionId='4' x:Name="textBox1" Text="{Binding Password ,Mode=TwoWay}" FontSize="24" HorizontalAlignment="Right" Height="48" Margin="0,444,20,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="234"                                   />
         <TextBox x:ConnectionId='5' x:Name="textBox3" Text="{Binding Username2 ,Mode=TwoWay}" HorizontalAlignment="Left" Height="64" Margin="20,256,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="234"                                   />
         <TextBox x:ConnectionId='6' x:Name="textBox4" Text="{Binding Password2 ,Mode=TwoWay}"  HorizontalAlignment="Left" Height="59" Margin="20,433,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="234"                                    RenderTransformOrigin="0.505,0.54"/>
-        <Button x:ConnectionId='7' x:Name="button" Content="Continue!" Opacity="{Binding Success, Mode = TwoWay}" HorizontalAlignment="Left" Height="48" Margin="297,20,0,0" VerticalAlignment="Top" Width="202"                     />
+        <Button x:ConnectionId='7' x:Name="button" Content="Continue!" IsEnabled="{Binding IsLoggedIn, Mode=TwoWay}" Opacity="{Binding Success, Mode = TwoWay}" HorizontalAlignment="Left" Height="48" Margin="297,20,0,0" VerticalAlignment="Top" Width="202"                     />
         <CheckBox x:ConnectionId='8' x:Name="checkBox" Content="Confirm" IsChecked="{Binding IsChecked, Mode=TwoWay}" HorizontalAlignment="Left" Height="31" Margin="297,81,0,0" VerticalAlignment="Top" Width="56"/>
         <TextBlock x:ConnectionId='9' x:Name="textBlock" HorizontalAlignment="Left" Height="25" Margin="565,20,0,0" TextWrapping="Wrap" Text="{Binding CurrentCustomer, Mode=TwoWay}" VerticalAlignment="Top" Width="170"/>
 

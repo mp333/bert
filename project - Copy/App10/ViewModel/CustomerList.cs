@@ -37,6 +37,18 @@ namespace App10.ViewModel
             LoadCustomers(); 
         }
 
+        private bool islogged;
+
+        public bool IsLoggedIn
+        {
+            get { return islogged; }
+            set
+            {
+                islogged = value;
+                OnPropertyChanged();
+            }
+        }
+
         private bool ischecked;
 
         public bool IsChecked
@@ -100,9 +112,10 @@ namespace App10.ViewModel
 
         public void Login()
         {
-            Success = 100;
-            CurrentCustomer = new Customer(Username2,Password2); // this is the wannabe login
-            //Here we put some way to move the page, or ot show the login is a success
+            Success = 100; //makesxwxwxrti button visible
+            CurrentCustomer = new Customer(Username2,Password2);
+            IsLoggedIn = true;
+            
         }
         public void Register()
         {
@@ -110,6 +123,7 @@ namespace App10.ViewModel
            
             List1.Add(new Customer(Username, Password));
             PersistencyService.SaveCustomersAsJsonAsync(List1);
+
         }
 
 

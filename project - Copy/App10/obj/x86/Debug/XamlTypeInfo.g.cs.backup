@@ -132,7 +132,7 @@ namespace App10.App10_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[34];
+            _typeNameTable = new string[38];
             _typeNameTable[0] = "App10.ViewModel.CustomerList";
             _typeNameTable[1] = "App10.ViewModel.ViewModelBase";
             _typeNameTable[2] = "Object";
@@ -143,32 +143,36 @@ namespace App10.App10_XamlTypeInfo
             _typeNameTable[7] = "Boolean";
             _typeNameTable[8] = "Int32";
             _typeNameTable[9] = "App10.Common.RelayCommand";
-            _typeNameTable[10] = "Microsoft.Xaml.Interactivity.Interaction";
-            _typeNameTable[11] = "Microsoft.Xaml.Interactivity.BehaviorCollection";
-            _typeNameTable[12] = "Windows.UI.Xaml.DependencyObjectCollection";
-            _typeNameTable[13] = "Windows.UI.Xaml.DependencyObject";
-            _typeNameTable[14] = "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior";
-            _typeNameTable[15] = "Microsoft.Xaml.Interactivity.ActionCollection";
-            _typeNameTable[16] = "Microsoft.Xaml.Interactions.Core.InvokeCommandAction";
-            _typeNameTable[17] = "System.Windows.Input.ICommand";
-            _typeNameTable[18] = "Windows.UI.Xaml.Data.IValueConverter";
-            _typeNameTable[19] = "App10.View.BlankPage1";
-            _typeNameTable[20] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[21] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[22] = "App10.ViewModel.BookingVM";
-            _typeNameTable[23] = "System.Collections.ObjectModel.ObservableCollection`1<App10.Model.Booking>";
-            _typeNameTable[24] = "System.Collections.ObjectModel.Collection`1<App10.Model.Booking>";
-            _typeNameTable[25] = "App10.Model.Booking";
-            _typeNameTable[26] = "System.DateTime";
-            _typeNameTable[27] = "System.ValueType";
-            _typeNameTable[28] = "System.Collections.ObjectModel.ObservableCollection`1<Int32>";
-            _typeNameTable[29] = "System.Collections.ObjectModel.Collection`1<Int32>";
-            _typeNameTable[30] = "TimeSpan";
-            _typeNameTable[31] = "App10.View.BookingPage";
-            _typeNameTable[32] = "App10.View.MainPage";
-            _typeNameTable[33] = "App10.View.MyBookings";
+            _typeNameTable[10] = "App10.Model.Accomodation";
+            _typeNameTable[11] = "Microsoft.Xaml.Interactivity.Interaction";
+            _typeNameTable[12] = "Microsoft.Xaml.Interactivity.BehaviorCollection";
+            _typeNameTable[13] = "Windows.UI.Xaml.DependencyObjectCollection";
+            _typeNameTable[14] = "Windows.UI.Xaml.DependencyObject";
+            _typeNameTable[15] = "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior";
+            _typeNameTable[16] = "Microsoft.Xaml.Interactivity.ActionCollection";
+            _typeNameTable[17] = "Microsoft.Xaml.Interactions.Core.InvokeCommandAction";
+            _typeNameTable[18] = "System.Windows.Input.ICommand";
+            _typeNameTable[19] = "Windows.UI.Xaml.Data.IValueConverter";
+            _typeNameTable[20] = "App10.View.BlankPage1";
+            _typeNameTable[21] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[22] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[23] = "App10.ViewModel.BookingVM";
+            _typeNameTable[24] = "System.Collections.ObjectModel.ObservableCollection`1<App10.Model.Booking>";
+            _typeNameTable[25] = "System.Collections.ObjectModel.Collection`1<App10.Model.Booking>";
+            _typeNameTable[26] = "App10.Model.Booking";
+            _typeNameTable[27] = "System.DateTime";
+            _typeNameTable[28] = "System.ValueType";
+            _typeNameTable[29] = "System.Collections.ObjectModel.ObservableCollection`1<Int32>";
+            _typeNameTable[30] = "System.Collections.ObjectModel.Collection`1<Int32>";
+            _typeNameTable[31] = "System.DateTimeOffset";
+            _typeNameTable[32] = "App10.View.BookingPage";
+            _typeNameTable[33] = "App10.ViewModel.AccomodationVM";
+            _typeNameTable[34] = "System.Collections.ObjectModel.ObservableCollection`1<App10.Model.Accomodation>";
+            _typeNameTable[35] = "System.Collections.ObjectModel.Collection`1<App10.Model.Accomodation>";
+            _typeNameTable[36] = "App10.View.MainPage";
+            _typeNameTable[37] = "App10.View.MyBookings";
 
-            _typeTable = new global::System.Type[34];
+            _typeTable = new global::System.Type[38];
             _typeTable[0] = typeof(global::App10.ViewModel.CustomerList);
             _typeTable[1] = typeof(global::App10.ViewModel.ViewModelBase);
             _typeTable[2] = typeof(global::System.Object);
@@ -179,30 +183,34 @@ namespace App10.App10_XamlTypeInfo
             _typeTable[7] = typeof(global::System.Boolean);
             _typeTable[8] = typeof(global::System.Int32);
             _typeTable[9] = typeof(global::App10.Common.RelayCommand);
-            _typeTable[10] = typeof(global::Microsoft.Xaml.Interactivity.Interaction);
-            _typeTable[11] = typeof(global::Microsoft.Xaml.Interactivity.BehaviorCollection);
-            _typeTable[12] = typeof(global::Windows.UI.Xaml.DependencyObjectCollection);
-            _typeTable[13] = typeof(global::Windows.UI.Xaml.DependencyObject);
-            _typeTable[14] = typeof(global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior);
-            _typeTable[15] = typeof(global::Microsoft.Xaml.Interactivity.ActionCollection);
-            _typeTable[16] = typeof(global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction);
-            _typeTable[17] = typeof(global::System.Windows.Input.ICommand);
-            _typeTable[18] = typeof(global::Windows.UI.Xaml.Data.IValueConverter);
-            _typeTable[19] = typeof(global::App10.View.BlankPage1);
-            _typeTable[20] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[21] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[22] = typeof(global::App10.ViewModel.BookingVM);
-            _typeTable[23] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::App10.Model.Booking>);
-            _typeTable[24] = typeof(global::System.Collections.ObjectModel.Collection<global::App10.Model.Booking>);
-            _typeTable[25] = typeof(global::App10.Model.Booking);
-            _typeTable[26] = typeof(global::System.DateTime);
-            _typeTable[27] = typeof(global::System.ValueType);
-            _typeTable[28] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::System.Int32>);
-            _typeTable[29] = typeof(global::System.Collections.ObjectModel.Collection<global::System.Int32>);
-            _typeTable[30] = typeof(global::System.TimeSpan);
-            _typeTable[31] = typeof(global::App10.View.BookingPage);
-            _typeTable[32] = typeof(global::App10.View.MainPage);
-            _typeTable[33] = typeof(global::App10.View.MyBookings);
+            _typeTable[10] = typeof(global::App10.Model.Accomodation);
+            _typeTable[11] = typeof(global::Microsoft.Xaml.Interactivity.Interaction);
+            _typeTable[12] = typeof(global::Microsoft.Xaml.Interactivity.BehaviorCollection);
+            _typeTable[13] = typeof(global::Windows.UI.Xaml.DependencyObjectCollection);
+            _typeTable[14] = typeof(global::Windows.UI.Xaml.DependencyObject);
+            _typeTable[15] = typeof(global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior);
+            _typeTable[16] = typeof(global::Microsoft.Xaml.Interactivity.ActionCollection);
+            _typeTable[17] = typeof(global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction);
+            _typeTable[18] = typeof(global::System.Windows.Input.ICommand);
+            _typeTable[19] = typeof(global::Windows.UI.Xaml.Data.IValueConverter);
+            _typeTable[20] = typeof(global::App10.View.BlankPage1);
+            _typeTable[21] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[22] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[23] = typeof(global::App10.ViewModel.BookingVM);
+            _typeTable[24] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::App10.Model.Booking>);
+            _typeTable[25] = typeof(global::System.Collections.ObjectModel.Collection<global::App10.Model.Booking>);
+            _typeTable[26] = typeof(global::App10.Model.Booking);
+            _typeTable[27] = typeof(global::System.DateTime);
+            _typeTable[28] = typeof(global::System.ValueType);
+            _typeTable[29] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::System.Int32>);
+            _typeTable[30] = typeof(global::System.Collections.ObjectModel.Collection<global::System.Int32>);
+            _typeTable[31] = typeof(global::System.DateTimeOffset);
+            _typeTable[32] = typeof(global::App10.View.BookingPage);
+            _typeTable[33] = typeof(global::App10.ViewModel.AccomodationVM);
+            _typeTable[34] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::App10.Model.Accomodation>);
+            _typeTable[35] = typeof(global::System.Collections.ObjectModel.Collection<global::App10.Model.Accomodation>);
+            _typeTable[36] = typeof(global::App10.View.MainPage);
+            _typeTable[37] = typeof(global::App10.View.MyBookings);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -240,19 +248,22 @@ namespace App10.App10_XamlTypeInfo
         private object Activate_0_CustomerList() { return new global::App10.ViewModel.CustomerList(); }
         private object Activate_4_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::App10.Model.Customer>(); }
         private object Activate_5_Collection() { return new global::System.Collections.ObjectModel.Collection<global::App10.Model.Customer>(); }
-        private object Activate_11_BehaviorCollection() { return new global::Microsoft.Xaml.Interactivity.BehaviorCollection(); }
-        private object Activate_14_EventTriggerBehavior() { return new global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior(); }
-        private object Activate_15_ActionCollection() { return new global::Microsoft.Xaml.Interactivity.ActionCollection(); }
-        private object Activate_16_InvokeCommandAction() { return new global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction(); }
-        private object Activate_19_BlankPage1() { return new global::App10.View.BlankPage1(); }
-        private object Activate_22_BookingVM() { return new global::App10.ViewModel.BookingVM(); }
-        private object Activate_23_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::App10.Model.Booking>(); }
-        private object Activate_24_Collection() { return new global::System.Collections.ObjectModel.Collection<global::App10.Model.Booking>(); }
-        private object Activate_28_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::System.Int32>(); }
-        private object Activate_29_Collection() { return new global::System.Collections.ObjectModel.Collection<global::System.Int32>(); }
-        private object Activate_31_BookingPage() { return new global::App10.View.BookingPage(); }
-        private object Activate_32_MainPage() { return new global::App10.View.MainPage(); }
-        private object Activate_33_MyBookings() { return new global::App10.View.MyBookings(); }
+        private object Activate_12_BehaviorCollection() { return new global::Microsoft.Xaml.Interactivity.BehaviorCollection(); }
+        private object Activate_15_EventTriggerBehavior() { return new global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior(); }
+        private object Activate_16_ActionCollection() { return new global::Microsoft.Xaml.Interactivity.ActionCollection(); }
+        private object Activate_17_InvokeCommandAction() { return new global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction(); }
+        private object Activate_20_BlankPage1() { return new global::App10.View.BlankPage1(); }
+        private object Activate_23_BookingVM() { return new global::App10.ViewModel.BookingVM(); }
+        private object Activate_24_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::App10.Model.Booking>(); }
+        private object Activate_25_Collection() { return new global::System.Collections.ObjectModel.Collection<global::App10.Model.Booking>(); }
+        private object Activate_29_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::System.Int32>(); }
+        private object Activate_30_Collection() { return new global::System.Collections.ObjectModel.Collection<global::System.Int32>(); }
+        private object Activate_32_BookingPage() { return new global::App10.View.BookingPage(); }
+        private object Activate_33_AccomodationVM() { return new global::App10.ViewModel.AccomodationVM(); }
+        private object Activate_34_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::App10.Model.Accomodation>(); }
+        private object Activate_35_Collection() { return new global::System.Collections.ObjectModel.Collection<global::App10.Model.Accomodation>(); }
+        private object Activate_36_MainPage() { return new global::App10.View.MainPage(); }
+        private object Activate_37_MyBookings() { return new global::App10.View.MyBookings(); }
         private void VectorAdd_4_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::App10.Model.Customer>)instance;
@@ -265,40 +276,52 @@ namespace App10.App10_XamlTypeInfo
             var newItem = (global::App10.Model.Customer)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_11_BehaviorCollection(object instance, object item)
+        private void VectorAdd_12_BehaviorCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DependencyObject>)instance;
             var newItem = (global::Windows.UI.Xaml.DependencyObject)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_15_ActionCollection(object instance, object item)
+        private void VectorAdd_16_ActionCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DependencyObject>)instance;
             var newItem = (global::Windows.UI.Xaml.DependencyObject)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_23_ObservableCollection(object instance, object item)
+        private void VectorAdd_24_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::App10.Model.Booking>)instance;
             var newItem = (global::App10.Model.Booking)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_24_Collection(object instance, object item)
+        private void VectorAdd_25_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::App10.Model.Booking>)instance;
             var newItem = (global::App10.Model.Booking)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_28_ObservableCollection(object instance, object item)
+        private void VectorAdd_29_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::System.Int32>)instance;
             var newItem = (global::System.Int32)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_29_Collection(object instance, object item)
+        private void VectorAdd_30_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::System.Int32>)instance;
             var newItem = (global::System.Int32)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_34_ObservableCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::App10.Model.Accomodation>)instance;
+            var newItem = (global::App10.Model.Accomodation)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_35_Collection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::App10.Model.Accomodation>)instance;
+            var newItem = (global::App10.Model.Accomodation)item;
             collection.Add(newItem);
         }
 
@@ -318,6 +341,7 @@ namespace App10.App10_XamlTypeInfo
                 userType.AddMemberName("Username");
                 userType.AddMemberName("Password");
                 userType.AddMemberName("List1");
+                userType.AddMemberName("IsLoggedIn");
                 userType.AddMemberName("IsChecked");
                 userType.AddMemberName("Success");
                 userType.AddMemberName("Username2");
@@ -332,6 +356,7 @@ namespace App10.App10_XamlTypeInfo
             case 1:   //  App10.ViewModel.ViewModelBase
                 userType = new global::App10.App10_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.AddMemberName("CurrentCustomer");
+                userType.AddMemberName("CurrentAccomodation");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -382,30 +407,39 @@ namespace App10.App10_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 10:   //  Microsoft.Xaml.Interactivity.Interaction
+            case 10:   //  App10.Model.Accomodation
+                userType = new global::App10.App10_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.AddMemberName("Adress");
+                userType.AddMemberName("Price");
+                userType.AddMemberName("AccName");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 11:   //  Microsoft.Xaml.Interactivity.Interaction
                 userType = new global::App10.App10_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.AddMemberName("Behaviors");
                 xamlType = userType;
                 break;
 
-            case 11:   //  Microsoft.Xaml.Interactivity.BehaviorCollection
+            case 12:   //  Microsoft.Xaml.Interactivity.BehaviorCollection
                 userType = new global::App10.App10_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObjectCollection"));
-                userType.CollectionAdd = VectorAdd_11_BehaviorCollection;
+                userType.CollectionAdd = VectorAdd_12_BehaviorCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 12:   //  Windows.UI.Xaml.DependencyObjectCollection
+            case 13:   //  Windows.UI.Xaml.DependencyObjectCollection
                 xamlType = new global::App10.App10_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 13:   //  Windows.UI.Xaml.DependencyObject
+            case 14:   //  Windows.UI.Xaml.DependencyObject
                 xamlType = new global::App10.App10_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 14:   //  Microsoft.Xaml.Interactions.Core.EventTriggerBehavior
+            case 15:   //  Microsoft.Xaml.Interactions.Core.EventTriggerBehavior
                 userType = new global::App10.App10_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_14_EventTriggerBehavior;
+                userType.Activator = Activate_15_EventTriggerBehavior;
                 userType.SetContentPropertyName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.Actions");
                 userType.AddMemberName("Actions");
                 userType.AddMemberName("EventName");
@@ -414,16 +448,16 @@ namespace App10.App10_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 15:   //  Microsoft.Xaml.Interactivity.ActionCollection
+            case 16:   //  Microsoft.Xaml.Interactivity.ActionCollection
                 userType = new global::App10.App10_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObjectCollection"));
-                userType.CollectionAdd = VectorAdd_15_ActionCollection;
+                userType.CollectionAdd = VectorAdd_16_ActionCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 16:   //  Microsoft.Xaml.Interactions.Core.InvokeCommandAction
+            case 17:   //  Microsoft.Xaml.Interactions.Core.InvokeCommandAction
                 userType = new global::App10.App10_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_16_InvokeCommandAction;
+                userType.Activator = Activate_17_InvokeCommandAction;
                 userType.AddMemberName("Command");
                 userType.AddMemberName("CommandParameter");
                 userType.AddMemberName("InputConverter");
@@ -432,40 +466,41 @@ namespace App10.App10_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 17:   //  System.Windows.Input.ICommand
+            case 18:   //  System.Windows.Input.ICommand
                 userType = new global::App10.App10_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 18:   //  Windows.UI.Xaml.Data.IValueConverter
+            case 19:   //  Windows.UI.Xaml.Data.IValueConverter
                 xamlType = new global::App10.App10_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 19:   //  App10.View.BlankPage1
+            case 20:   //  App10.View.BlankPage1
                 userType = new global::App10.App10_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_19_BlankPage1;
+                userType.Activator = Activate_20_BlankPage1;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 20:   //  Windows.UI.Xaml.Controls.Page
+            case 21:   //  Windows.UI.Xaml.Controls.Page
                 xamlType = new global::App10.App10_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 21:   //  Windows.UI.Xaml.Controls.UserControl
+            case 22:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::App10.App10_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 22:   //  App10.ViewModel.BookingVM
+            case 23:   //  App10.ViewModel.BookingVM
                 userType = new global::App10.App10_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("App10.ViewModel.ViewModelBase"));
-                userType.Activator = Activate_22_BookingVM;
+                userType.Activator = Activate_23_BookingVM;
                 userType.AddMemberName("Books");
                 userType.AddMemberName("Numbers");
-                userType.AddMemberName("CreditCard");
-                userType.AddMemberName("CzechzIn");
                 userType.AddMemberName("CzechOut");
-                userType.AddMemberName("DaySpan");
+                userType.AddMemberName("CzechIn");
+                userType.AddMemberName("ChekIns");
+                userType.AddMemberName("ChekAus");
+                userType.AddMemberName("CreditCard");
                 userType.AddMemberName("IsConfirmed");
                 userType.AddMemberName("IsAllInc");
                 userType.AddMemberName("HowManyPpl");
@@ -473,84 +508,111 @@ namespace App10.App10_XamlTypeInfo
                 userType.AddMemberName("Success");
                 userType.AddMemberName("AddBookingCommand");
                 userType.AddMemberName("GetBookCommand");
+                userType.AddMemberName("HandleCommand");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 23:   //  System.Collections.ObjectModel.ObservableCollection`1<App10.Model.Booking>
+            case 24:   //  System.Collections.ObjectModel.ObservableCollection`1<App10.Model.Booking>
                 userType = new global::App10.App10_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<App10.Model.Booking>"));
-                userType.CollectionAdd = VectorAdd_23_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_24_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 24:   //  System.Collections.ObjectModel.Collection`1<App10.Model.Booking>
+            case 25:   //  System.Collections.ObjectModel.Collection`1<App10.Model.Booking>
                 userType = new global::App10.App10_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_24_Collection;
-                userType.CollectionAdd = VectorAdd_24_Collection;
+                userType.Activator = Activate_25_Collection;
+                userType.CollectionAdd = VectorAdd_25_Collection;
                 xamlType = userType;
                 break;
 
-            case 25:   //  App10.Model.Booking
+            case 26:   //  App10.Model.Booking
                 userType = new global::App10.App10_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.AddMemberName("OrderedBy");
                 userType.AddMemberName("CheckInDateTime");
                 userType.AddMemberName("CheckOutDateTime");
                 userType.AddMemberName("OrderDateTime");
                 userType.AddMemberName("NumberOfPpl");
+                userType.AddMemberName("ThisAccomodation");
                 userType.AddMemberName("BookNumber");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 26:   //  System.DateTime
+            case 27:   //  System.DateTime
                 userType = new global::App10.App10_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 27:   //  System.ValueType
+            case 28:   //  System.ValueType
                 userType = new global::App10.App10_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 xamlType = userType;
                 break;
 
-            case 28:   //  System.Collections.ObjectModel.ObservableCollection`1<Int32>
+            case 29:   //  System.Collections.ObjectModel.ObservableCollection`1<Int32>
                 userType = new global::App10.App10_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Int32>"));
-                userType.CollectionAdd = VectorAdd_28_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_29_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 29:   //  System.Collections.ObjectModel.Collection`1<Int32>
+            case 30:   //  System.Collections.ObjectModel.Collection`1<Int32>
                 userType = new global::App10.App10_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_29_Collection;
-                userType.CollectionAdd = VectorAdd_29_Collection;
+                userType.Activator = Activate_30_Collection;
+                userType.CollectionAdd = VectorAdd_30_Collection;
                 xamlType = userType;
                 break;
 
-            case 30:   //  TimeSpan
+            case 31:   //  System.DateTimeOffset
                 userType = new global::App10.App10_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 31:   //  App10.View.BookingPage
+            case 32:   //  App10.View.BookingPage
                 userType = new global::App10.App10_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_31_BookingPage;
+                userType.Activator = Activate_32_BookingPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 32:   //  App10.View.MainPage
-                userType = new global::App10.App10_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_32_MainPage;
+            case 33:   //  App10.ViewModel.AccomodationVM
+                userType = new global::App10.App10_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("App10.ViewModel.ViewModelBase"));
+                userType.Activator = Activate_33_AccomodationVM;
+                userType.AddMemberName("Success");
+                userType.AddMemberName("Accomodations");
+                userType.AddMemberName("LyonCommand");
+                userType.AddMemberName("CanBook");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 33:   //  App10.View.MyBookings
+            case 34:   //  System.Collections.ObjectModel.ObservableCollection`1<App10.Model.Accomodation>
+                userType = new global::App10.App10_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<App10.Model.Accomodation>"));
+                userType.CollectionAdd = VectorAdd_34_ObservableCollection;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 35:   //  System.Collections.ObjectModel.Collection`1<App10.Model.Accomodation>
+                userType = new global::App10.App10_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_35_Collection;
+                userType.CollectionAdd = VectorAdd_35_Collection;
+                xamlType = userType;
+                break;
+
+            case 36:   //  App10.View.MainPage
                 userType = new global::App10.App10_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_33_MyBookings;
+                userType.Activator = Activate_36_MainPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 37:   //  App10.View.MyBookings
+                userType = new global::App10.App10_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_37_MyBookings;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -619,363 +681,483 @@ namespace App10.App10_XamlTypeInfo
             var that = (global::App10.Model.Customer)instance;
             that.ContactInfo = (global::System.String)Value;
         }
-        private object get_6_CustomerList_IsChecked(object instance)
+        private object get_6_CustomerList_IsLoggedIn(object instance)
+        {
+            var that = (global::App10.ViewModel.CustomerList)instance;
+            return that.IsLoggedIn;
+        }
+        private void set_6_CustomerList_IsLoggedIn(object instance, object Value)
+        {
+            var that = (global::App10.ViewModel.CustomerList)instance;
+            that.IsLoggedIn = (global::System.Boolean)Value;
+        }
+        private object get_7_CustomerList_IsChecked(object instance)
         {
             var that = (global::App10.ViewModel.CustomerList)instance;
             return that.IsChecked;
         }
-        private void set_6_CustomerList_IsChecked(object instance, object Value)
+        private void set_7_CustomerList_IsChecked(object instance, object Value)
         {
             var that = (global::App10.ViewModel.CustomerList)instance;
             that.IsChecked = (global::System.Boolean)Value;
         }
-        private object get_7_CustomerList_Success(object instance)
+        private object get_8_CustomerList_Success(object instance)
         {
             var that = (global::App10.ViewModel.CustomerList)instance;
             return that.Success;
         }
-        private void set_7_CustomerList_Success(object instance, object Value)
+        private void set_8_CustomerList_Success(object instance, object Value)
         {
             var that = (global::App10.ViewModel.CustomerList)instance;
             that.Success = (global::System.Int32)Value;
         }
-        private object get_8_CustomerList_Username2(object instance)
+        private object get_9_CustomerList_Username2(object instance)
         {
             var that = (global::App10.ViewModel.CustomerList)instance;
             return that.Username2;
         }
-        private void set_8_CustomerList_Username2(object instance, object Value)
+        private void set_9_CustomerList_Username2(object instance, object Value)
         {
             var that = (global::App10.ViewModel.CustomerList)instance;
             that.Username2 = (global::System.String)Value;
         }
-        private object get_9_CustomerList_Password2(object instance)
+        private object get_10_CustomerList_Password2(object instance)
         {
             var that = (global::App10.ViewModel.CustomerList)instance;
             return that.Password2;
         }
-        private void set_9_CustomerList_Password2(object instance, object Value)
+        private void set_10_CustomerList_Password2(object instance, object Value)
         {
             var that = (global::App10.ViewModel.CustomerList)instance;
             that.Password2 = (global::System.String)Value;
         }
-        private object get_10_CustomerList_AddCustomerCommand(object instance)
+        private object get_11_CustomerList_AddCustomerCommand(object instance)
         {
             var that = (global::App10.ViewModel.CustomerList)instance;
             return that.AddCustomerCommand;
         }
-        private void set_10_CustomerList_AddCustomerCommand(object instance, object Value)
+        private void set_11_CustomerList_AddCustomerCommand(object instance, object Value)
         {
             var that = (global::App10.ViewModel.CustomerList)instance;
             that.AddCustomerCommand = (global::App10.Common.RelayCommand)Value;
         }
-        private object get_11_CustomerList_GetListCommand(object instance)
+        private object get_12_CustomerList_GetListCommand(object instance)
         {
             var that = (global::App10.ViewModel.CustomerList)instance;
             return that.GetListCommand;
         }
-        private void set_11_CustomerList_GetListCommand(object instance, object Value)
+        private void set_12_CustomerList_GetListCommand(object instance, object Value)
         {
             var that = (global::App10.ViewModel.CustomerList)instance;
             that.GetListCommand = (global::App10.Common.RelayCommand)Value;
         }
-        private object get_12_CustomerList_LoginCommand(object instance)
+        private object get_13_CustomerList_LoginCommand(object instance)
         {
             var that = (global::App10.ViewModel.CustomerList)instance;
             return that.LoginCommand;
         }
-        private void set_12_CustomerList_LoginCommand(object instance, object Value)
+        private void set_13_CustomerList_LoginCommand(object instance, object Value)
         {
             var that = (global::App10.ViewModel.CustomerList)instance;
             that.LoginCommand = (global::App10.Common.RelayCommand)Value;
         }
-        private object get_13_ViewModelBase_CurrentCustomer(object instance)
+        private object get_14_ViewModelBase_CurrentCustomer(object instance)
         {
             var that = (global::App10.ViewModel.ViewModelBase)instance;
             return that.CurrentCustomer;
         }
-        private void set_13_ViewModelBase_CurrentCustomer(object instance, object Value)
+        private void set_14_ViewModelBase_CurrentCustomer(object instance, object Value)
         {
             var that = (global::App10.ViewModel.ViewModelBase)instance;
             that.CurrentCustomer = (global::App10.Model.Customer)Value;
         }
-        private object get_14_Interaction_Behaviors(object instance)
+        private object get_15_ViewModelBase_CurrentAccomodation(object instance)
+        {
+            var that = (global::App10.ViewModel.ViewModelBase)instance;
+            return that.CurrentAccomodation;
+        }
+        private void set_15_ViewModelBase_CurrentAccomodation(object instance, object Value)
+        {
+            var that = (global::App10.ViewModel.ViewModelBase)instance;
+            that.CurrentAccomodation = (global::App10.Model.Accomodation)Value;
+        }
+        private object get_16_Interaction_Behaviors(object instance)
         {
             return global::Microsoft.Xaml.Interactivity.Interaction.GetBehaviors((global::Windows.UI.Xaml.DependencyObject)instance);
         }
-        private void set_14_Interaction_Behaviors(object instance, object Value)
+        private void set_16_Interaction_Behaviors(object instance, object Value)
         {
             global::Microsoft.Xaml.Interactivity.Interaction.SetBehaviors((global::Windows.UI.Xaml.DependencyObject)instance, (global::Microsoft.Xaml.Interactivity.BehaviorCollection)Value);
         }
-        private object get_15_EventTriggerBehavior_Actions(object instance)
+        private object get_17_EventTriggerBehavior_Actions(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
             return that.Actions;
         }
-        private object get_16_EventTriggerBehavior_EventName(object instance)
+        private object get_18_EventTriggerBehavior_EventName(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
             return that.EventName;
         }
-        private void set_16_EventTriggerBehavior_EventName(object instance, object Value)
+        private void set_18_EventTriggerBehavior_EventName(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
             that.EventName = (global::System.String)Value;
         }
-        private object get_17_EventTriggerBehavior_SourceObject(object instance)
+        private object get_19_EventTriggerBehavior_SourceObject(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
             return that.SourceObject;
         }
-        private void set_17_EventTriggerBehavior_SourceObject(object instance, object Value)
+        private void set_19_EventTriggerBehavior_SourceObject(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
             that.SourceObject = (global::System.Object)Value;
         }
-        private object get_18_EventTriggerBehavior_AssociatedObject(object instance)
+        private object get_20_EventTriggerBehavior_AssociatedObject(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
             return that.AssociatedObject;
         }
-        private object get_19_InvokeCommandAction_Command(object instance)
+        private object get_21_InvokeCommandAction_Command(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
             return that.Command;
         }
-        private void set_19_InvokeCommandAction_Command(object instance, object Value)
+        private void set_21_InvokeCommandAction_Command(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
             that.Command = (global::System.Windows.Input.ICommand)Value;
         }
-        private object get_20_InvokeCommandAction_CommandParameter(object instance)
+        private object get_22_InvokeCommandAction_CommandParameter(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
             return that.CommandParameter;
         }
-        private void set_20_InvokeCommandAction_CommandParameter(object instance, object Value)
+        private void set_22_InvokeCommandAction_CommandParameter(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
             that.CommandParameter = (global::System.Object)Value;
         }
-        private object get_21_InvokeCommandAction_InputConverter(object instance)
+        private object get_23_InvokeCommandAction_InputConverter(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
             return that.InputConverter;
         }
-        private void set_21_InvokeCommandAction_InputConverter(object instance, object Value)
+        private void set_23_InvokeCommandAction_InputConverter(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
             that.InputConverter = (global::Windows.UI.Xaml.Data.IValueConverter)Value;
         }
-        private object get_22_InvokeCommandAction_InputConverterParameter(object instance)
+        private object get_24_InvokeCommandAction_InputConverterParameter(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
             return that.InputConverterParameter;
         }
-        private void set_22_InvokeCommandAction_InputConverterParameter(object instance, object Value)
+        private void set_24_InvokeCommandAction_InputConverterParameter(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
             that.InputConverterParameter = (global::System.Object)Value;
         }
-        private object get_23_InvokeCommandAction_InputConverterLanguage(object instance)
+        private object get_25_InvokeCommandAction_InputConverterLanguage(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
             return that.InputConverterLanguage;
         }
-        private void set_23_InvokeCommandAction_InputConverterLanguage(object instance, object Value)
+        private void set_25_InvokeCommandAction_InputConverterLanguage(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
             that.InputConverterLanguage = (global::System.String)Value;
         }
-        private object get_24_BookingVM_Books(object instance)
+        private object get_26_BookingVM_Books(object instance)
         {
             var that = (global::App10.ViewModel.BookingVM)instance;
             return that.Books;
         }
-        private void set_24_BookingVM_Books(object instance, object Value)
+        private void set_26_BookingVM_Books(object instance, object Value)
         {
             var that = (global::App10.ViewModel.BookingVM)instance;
             that.Books = (global::System.Collections.ObjectModel.ObservableCollection<global::App10.Model.Booking>)Value;
         }
-        private object get_25_Booking_OrderedBy(object instance)
+        private object get_27_Booking_OrderedBy(object instance)
         {
             var that = (global::App10.Model.Booking)instance;
             return that.OrderedBy;
         }
-        private void set_25_Booking_OrderedBy(object instance, object Value)
+        private void set_27_Booking_OrderedBy(object instance, object Value)
         {
             var that = (global::App10.Model.Booking)instance;
             that.OrderedBy = (global::System.String)Value;
         }
-        private object get_26_Booking_CheckInDateTime(object instance)
+        private object get_28_Booking_CheckInDateTime(object instance)
         {
             var that = (global::App10.Model.Booking)instance;
             return that.CheckInDateTime;
         }
-        private void set_26_Booking_CheckInDateTime(object instance, object Value)
+        private void set_28_Booking_CheckInDateTime(object instance, object Value)
         {
             var that = (global::App10.Model.Booking)instance;
             that.CheckInDateTime = (global::System.DateTime)Value;
         }
-        private object get_27_Booking_CheckOutDateTime(object instance)
+        private object get_29_Booking_CheckOutDateTime(object instance)
         {
             var that = (global::App10.Model.Booking)instance;
             return that.CheckOutDateTime;
         }
-        private void set_27_Booking_CheckOutDateTime(object instance, object Value)
+        private void set_29_Booking_CheckOutDateTime(object instance, object Value)
         {
             var that = (global::App10.Model.Booking)instance;
             that.CheckOutDateTime = (global::System.DateTime)Value;
         }
-        private object get_28_Booking_OrderDateTime(object instance)
+        private object get_30_Booking_OrderDateTime(object instance)
         {
             var that = (global::App10.Model.Booking)instance;
             return that.OrderDateTime;
         }
-        private void set_28_Booking_OrderDateTime(object instance, object Value)
+        private void set_30_Booking_OrderDateTime(object instance, object Value)
         {
             var that = (global::App10.Model.Booking)instance;
             that.OrderDateTime = (global::System.DateTime)Value;
         }
-        private object get_29_Booking_NumberOfPpl(object instance)
+        private object get_31_Booking_NumberOfPpl(object instance)
         {
             var that = (global::App10.Model.Booking)instance;
             return that.NumberOfPpl;
         }
-        private void set_29_Booking_NumberOfPpl(object instance, object Value)
+        private void set_31_Booking_NumberOfPpl(object instance, object Value)
         {
             var that = (global::App10.Model.Booking)instance;
             that.NumberOfPpl = (global::System.Int32)Value;
         }
-        private object get_30_Booking_BookNumber(object instance)
+        private object get_32_Booking_ThisAccomodation(object instance)
+        {
+            var that = (global::App10.Model.Booking)instance;
+            return that.ThisAccomodation;
+        }
+        private void set_32_Booking_ThisAccomodation(object instance, object Value)
+        {
+            var that = (global::App10.Model.Booking)instance;
+            that.ThisAccomodation = (global::App10.Model.Accomodation)Value;
+        }
+        private object get_33_Booking_BookNumber(object instance)
         {
             var that = (global::App10.Model.Booking)instance;
             return that.BookNumber;
         }
-        private void set_30_Booking_BookNumber(object instance, object Value)
+        private void set_33_Booking_BookNumber(object instance, object Value)
         {
             var that = (global::App10.Model.Booking)instance;
             that.BookNumber = (global::System.Int32)Value;
         }
-        private object get_31_BookingVM_Numbers(object instance)
+        private object get_34_BookingVM_Numbers(object instance)
         {
             var that = (global::App10.ViewModel.BookingVM)instance;
             return that.Numbers;
         }
-        private void set_31_BookingVM_Numbers(object instance, object Value)
+        private void set_34_BookingVM_Numbers(object instance, object Value)
         {
             var that = (global::App10.ViewModel.BookingVM)instance;
             that.Numbers = (global::System.Collections.ObjectModel.ObservableCollection<global::System.Int32>)Value;
         }
-        private object get_32_BookingVM_CreditCard(object instance)
-        {
-            var that = (global::App10.ViewModel.BookingVM)instance;
-            return that.CreditCard;
-        }
-        private void set_32_BookingVM_CreditCard(object instance, object Value)
-        {
-            var that = (global::App10.ViewModel.BookingVM)instance;
-            that.CreditCard = (global::System.Int32)Value;
-        }
-        private object get_33_BookingVM_CzechzIn(object instance)
-        {
-            var that = (global::App10.ViewModel.BookingVM)instance;
-            return that.CzechzIn;
-        }
-        private void set_33_BookingVM_CzechzIn(object instance, object Value)
-        {
-            var that = (global::App10.ViewModel.BookingVM)instance;
-            that.CzechzIn = (global::System.DateTime)Value;
-        }
-        private object get_34_BookingVM_CzechOut(object instance)
+        private object get_35_BookingVM_CzechOut(object instance)
         {
             var that = (global::App10.ViewModel.BookingVM)instance;
             return that.CzechOut;
         }
-        private void set_34_BookingVM_CzechOut(object instance, object Value)
+        private void set_35_BookingVM_CzechOut(object instance, object Value)
         {
             var that = (global::App10.ViewModel.BookingVM)instance;
-            that.CzechOut = (global::System.DateTime)Value;
+            that.CzechOut = (global::System.DateTimeOffset)Value;
         }
-        private object get_35_BookingVM_DaySpan(object instance)
+        private object get_36_BookingVM_CzechIn(object instance)
         {
             var that = (global::App10.ViewModel.BookingVM)instance;
-            return that.DaySpan;
+            return that.CzechIn;
         }
-        private void set_35_BookingVM_DaySpan(object instance, object Value)
+        private void set_36_BookingVM_CzechIn(object instance, object Value)
         {
             var that = (global::App10.ViewModel.BookingVM)instance;
-            that.DaySpan = (global::System.TimeSpan)Value;
+            that.CzechIn = (global::System.DateTimeOffset)Value;
         }
-        private object get_36_BookingVM_IsConfirmed(object instance)
+        private object get_37_BookingVM_ChekIns(object instance)
+        {
+            var that = (global::App10.ViewModel.BookingVM)instance;
+            return that.ChekIns;
+        }
+        private void set_37_BookingVM_ChekIns(object instance, object Value)
+        {
+            var that = (global::App10.ViewModel.BookingVM)instance;
+            that.ChekIns = (global::System.DateTime)Value;
+        }
+        private object get_38_BookingVM_ChekAus(object instance)
+        {
+            var that = (global::App10.ViewModel.BookingVM)instance;
+            return that.ChekAus;
+        }
+        private void set_38_BookingVM_ChekAus(object instance, object Value)
+        {
+            var that = (global::App10.ViewModel.BookingVM)instance;
+            that.ChekAus = (global::System.DateTime)Value;
+        }
+        private object get_39_BookingVM_CreditCard(object instance)
+        {
+            var that = (global::App10.ViewModel.BookingVM)instance;
+            return that.CreditCard;
+        }
+        private void set_39_BookingVM_CreditCard(object instance, object Value)
+        {
+            var that = (global::App10.ViewModel.BookingVM)instance;
+            that.CreditCard = (global::System.Int32)Value;
+        }
+        private object get_40_BookingVM_IsConfirmed(object instance)
         {
             var that = (global::App10.ViewModel.BookingVM)instance;
             return that.IsConfirmed;
         }
-        private void set_36_BookingVM_IsConfirmed(object instance, object Value)
+        private void set_40_BookingVM_IsConfirmed(object instance, object Value)
         {
             var that = (global::App10.ViewModel.BookingVM)instance;
             that.IsConfirmed = (global::System.Boolean)Value;
         }
-        private object get_37_BookingVM_IsAllInc(object instance)
+        private object get_41_BookingVM_IsAllInc(object instance)
         {
             var that = (global::App10.ViewModel.BookingVM)instance;
             return that.IsAllInc;
         }
-        private void set_37_BookingVM_IsAllInc(object instance, object Value)
+        private void set_41_BookingVM_IsAllInc(object instance, object Value)
         {
             var that = (global::App10.ViewModel.BookingVM)instance;
             that.IsAllInc = (global::System.Boolean)Value;
         }
-        private object get_38_BookingVM_HowManyPpl(object instance)
+        private object get_42_BookingVM_HowManyPpl(object instance)
         {
             var that = (global::App10.ViewModel.BookingVM)instance;
             return that.HowManyPpl;
         }
-        private void set_38_BookingVM_HowManyPpl(object instance, object Value)
+        private void set_42_BookingVM_HowManyPpl(object instance, object Value)
         {
             var that = (global::App10.ViewModel.BookingVM)instance;
             that.HowManyPpl = (global::System.Int32)Value;
         }
-        private object get_39_BookingVM_Cost(object instance)
+        private object get_43_BookingVM_Cost(object instance)
         {
             var that = (global::App10.ViewModel.BookingVM)instance;
             return that.Cost;
         }
-        private void set_39_BookingVM_Cost(object instance, object Value)
+        private void set_43_BookingVM_Cost(object instance, object Value)
         {
             var that = (global::App10.ViewModel.BookingVM)instance;
             that.Cost = (global::System.Int32)Value;
         }
-        private object get_40_BookingVM_Success(object instance)
+        private object get_44_BookingVM_Success(object instance)
         {
             var that = (global::App10.ViewModel.BookingVM)instance;
             return that.Success;
         }
-        private void set_40_BookingVM_Success(object instance, object Value)
+        private void set_44_BookingVM_Success(object instance, object Value)
         {
             var that = (global::App10.ViewModel.BookingVM)instance;
             that.Success = (global::System.Int32)Value;
         }
-        private object get_41_BookingVM_AddBookingCommand(object instance)
+        private object get_45_BookingVM_AddBookingCommand(object instance)
         {
             var that = (global::App10.ViewModel.BookingVM)instance;
             return that.AddBookingCommand;
         }
-        private void set_41_BookingVM_AddBookingCommand(object instance, object Value)
+        private void set_45_BookingVM_AddBookingCommand(object instance, object Value)
         {
             var that = (global::App10.ViewModel.BookingVM)instance;
             that.AddBookingCommand = (global::App10.Common.RelayCommand)Value;
         }
-        private object get_42_BookingVM_GetBookCommand(object instance)
+        private object get_46_BookingVM_GetBookCommand(object instance)
         {
             var that = (global::App10.ViewModel.BookingVM)instance;
             return that.GetBookCommand;
         }
-        private void set_42_BookingVM_GetBookCommand(object instance, object Value)
+        private void set_46_BookingVM_GetBookCommand(object instance, object Value)
         {
             var that = (global::App10.ViewModel.BookingVM)instance;
             that.GetBookCommand = (global::App10.Common.RelayCommand)Value;
+        }
+        private object get_47_BookingVM_HandleCommand(object instance)
+        {
+            var that = (global::App10.ViewModel.BookingVM)instance;
+            return that.HandleCommand;
+        }
+        private void set_47_BookingVM_HandleCommand(object instance, object Value)
+        {
+            var that = (global::App10.ViewModel.BookingVM)instance;
+            that.HandleCommand = (global::App10.Common.RelayCommand)Value;
+        }
+        private object get_48_AccomodationVM_Success(object instance)
+        {
+            var that = (global::App10.ViewModel.AccomodationVM)instance;
+            return that.Success;
+        }
+        private void set_48_AccomodationVM_Success(object instance, object Value)
+        {
+            var that = (global::App10.ViewModel.AccomodationVM)instance;
+            that.Success = (global::System.Int32)Value;
+        }
+        private object get_49_AccomodationVM_Accomodations(object instance)
+        {
+            var that = (global::App10.ViewModel.AccomodationVM)instance;
+            return that.Accomodations;
+        }
+        private void set_49_AccomodationVM_Accomodations(object instance, object Value)
+        {
+            var that = (global::App10.ViewModel.AccomodationVM)instance;
+            that.Accomodations = (global::System.Collections.ObjectModel.ObservableCollection<global::App10.Model.Accomodation>)Value;
+        }
+        private object get_50_Accomodation_Adress(object instance)
+        {
+            var that = (global::App10.Model.Accomodation)instance;
+            return that.Adress;
+        }
+        private void set_50_Accomodation_Adress(object instance, object Value)
+        {
+            var that = (global::App10.Model.Accomodation)instance;
+            that.Adress = (global::System.String)Value;
+        }
+        private object get_51_Accomodation_Price(object instance)
+        {
+            var that = (global::App10.Model.Accomodation)instance;
+            return that.Price;
+        }
+        private void set_51_Accomodation_Price(object instance, object Value)
+        {
+            var that = (global::App10.Model.Accomodation)instance;
+            that.Price = (global::System.Int32)Value;
+        }
+        private object get_52_Accomodation_AccName(object instance)
+        {
+            var that = (global::App10.Model.Accomodation)instance;
+            return that.AccName;
+        }
+        private void set_52_Accomodation_AccName(object instance, object Value)
+        {
+            var that = (global::App10.Model.Accomodation)instance;
+            that.AccName = (global::System.String)Value;
+        }
+        private object get_53_AccomodationVM_LyonCommand(object instance)
+        {
+            var that = (global::App10.ViewModel.AccomodationVM)instance;
+            return that.LyonCommand;
+        }
+        private void set_53_AccomodationVM_LyonCommand(object instance, object Value)
+        {
+            var that = (global::App10.ViewModel.AccomodationVM)instance;
+            that.LyonCommand = (global::App10.Common.RelayCommand)Value;
+        }
+        private object get_54_AccomodationVM_CanBook(object instance)
+        {
+            var that = (global::App10.ViewModel.AccomodationVM)instance;
+            return that.CanBook;
+        }
+        private void set_54_AccomodationVM_CanBook(object instance, object Value)
+        {
+            var that = (global::App10.ViewModel.AccomodationVM)instance;
+            that.CanBook = (global::System.Boolean)Value;
         }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
@@ -1021,237 +1203,309 @@ namespace App10.App10_XamlTypeInfo
                 xamlMember.Getter = get_5_Customer_ContactInfo;
                 xamlMember.Setter = set_5_Customer_ContactInfo;
                 break;
+            case "App10.ViewModel.CustomerList.IsLoggedIn":
+                userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("App10.ViewModel.CustomerList");
+                xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "IsLoggedIn", "Boolean");
+                xamlMember.Getter = get_6_CustomerList_IsLoggedIn;
+                xamlMember.Setter = set_6_CustomerList_IsLoggedIn;
+                break;
             case "App10.ViewModel.CustomerList.IsChecked":
                 userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("App10.ViewModel.CustomerList");
                 xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "IsChecked", "Boolean");
-                xamlMember.Getter = get_6_CustomerList_IsChecked;
-                xamlMember.Setter = set_6_CustomerList_IsChecked;
+                xamlMember.Getter = get_7_CustomerList_IsChecked;
+                xamlMember.Setter = set_7_CustomerList_IsChecked;
                 break;
             case "App10.ViewModel.CustomerList.Success":
                 userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("App10.ViewModel.CustomerList");
                 xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "Success", "Int32");
-                xamlMember.Getter = get_7_CustomerList_Success;
-                xamlMember.Setter = set_7_CustomerList_Success;
+                xamlMember.Getter = get_8_CustomerList_Success;
+                xamlMember.Setter = set_8_CustomerList_Success;
                 break;
             case "App10.ViewModel.CustomerList.Username2":
                 userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("App10.ViewModel.CustomerList");
                 xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "Username2", "String");
-                xamlMember.Getter = get_8_CustomerList_Username2;
-                xamlMember.Setter = set_8_CustomerList_Username2;
+                xamlMember.Getter = get_9_CustomerList_Username2;
+                xamlMember.Setter = set_9_CustomerList_Username2;
                 break;
             case "App10.ViewModel.CustomerList.Password2":
                 userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("App10.ViewModel.CustomerList");
                 xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "Password2", "String");
-                xamlMember.Getter = get_9_CustomerList_Password2;
-                xamlMember.Setter = set_9_CustomerList_Password2;
+                xamlMember.Getter = get_10_CustomerList_Password2;
+                xamlMember.Setter = set_10_CustomerList_Password2;
                 break;
             case "App10.ViewModel.CustomerList.AddCustomerCommand":
                 userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("App10.ViewModel.CustomerList");
                 xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "AddCustomerCommand", "App10.Common.RelayCommand");
-                xamlMember.Getter = get_10_CustomerList_AddCustomerCommand;
-                xamlMember.Setter = set_10_CustomerList_AddCustomerCommand;
+                xamlMember.Getter = get_11_CustomerList_AddCustomerCommand;
+                xamlMember.Setter = set_11_CustomerList_AddCustomerCommand;
                 break;
             case "App10.ViewModel.CustomerList.GetListCommand":
                 userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("App10.ViewModel.CustomerList");
                 xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "GetListCommand", "App10.Common.RelayCommand");
-                xamlMember.Getter = get_11_CustomerList_GetListCommand;
-                xamlMember.Setter = set_11_CustomerList_GetListCommand;
+                xamlMember.Getter = get_12_CustomerList_GetListCommand;
+                xamlMember.Setter = set_12_CustomerList_GetListCommand;
                 break;
             case "App10.ViewModel.CustomerList.LoginCommand":
                 userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("App10.ViewModel.CustomerList");
                 xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "LoginCommand", "App10.Common.RelayCommand");
-                xamlMember.Getter = get_12_CustomerList_LoginCommand;
-                xamlMember.Setter = set_12_CustomerList_LoginCommand;
+                xamlMember.Getter = get_13_CustomerList_LoginCommand;
+                xamlMember.Setter = set_13_CustomerList_LoginCommand;
                 break;
             case "App10.ViewModel.ViewModelBase.CurrentCustomer":
                 userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("App10.ViewModel.ViewModelBase");
                 xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "CurrentCustomer", "App10.Model.Customer");
-                xamlMember.Getter = get_13_ViewModelBase_CurrentCustomer;
-                xamlMember.Setter = set_13_ViewModelBase_CurrentCustomer;
+                xamlMember.Getter = get_14_ViewModelBase_CurrentCustomer;
+                xamlMember.Setter = set_14_ViewModelBase_CurrentCustomer;
+                break;
+            case "App10.ViewModel.ViewModelBase.CurrentAccomodation":
+                userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("App10.ViewModel.ViewModelBase");
+                xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "CurrentAccomodation", "App10.Model.Accomodation");
+                xamlMember.Getter = get_15_ViewModelBase_CurrentAccomodation;
+                xamlMember.Setter = set_15_ViewModelBase_CurrentAccomodation;
                 break;
             case "Microsoft.Xaml.Interactivity.Interaction.Behaviors":
                 userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactivity.Interaction");
                 xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "Behaviors", "Microsoft.Xaml.Interactivity.BehaviorCollection");
                 xamlMember.SetTargetTypeName("Windows.UI.Xaml.DependencyObject");
                 xamlMember.SetIsAttachable();
-                xamlMember.Getter = get_14_Interaction_Behaviors;
-                xamlMember.Setter = set_14_Interaction_Behaviors;
+                xamlMember.Getter = get_16_Interaction_Behaviors;
+                xamlMember.Setter = set_16_Interaction_Behaviors;
                 break;
             case "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.Actions":
                 userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior");
                 xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "Actions", "Microsoft.Xaml.Interactivity.ActionCollection");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_15_EventTriggerBehavior_Actions;
+                xamlMember.Getter = get_17_EventTriggerBehavior_Actions;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.EventName":
                 userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior");
                 xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "EventName", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_16_EventTriggerBehavior_EventName;
-                xamlMember.Setter = set_16_EventTriggerBehavior_EventName;
+                xamlMember.Getter = get_18_EventTriggerBehavior_EventName;
+                xamlMember.Setter = set_18_EventTriggerBehavior_EventName;
                 break;
             case "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.SourceObject":
                 userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior");
                 xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "SourceObject", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_17_EventTriggerBehavior_SourceObject;
-                xamlMember.Setter = set_17_EventTriggerBehavior_SourceObject;
+                xamlMember.Getter = get_19_EventTriggerBehavior_SourceObject;
+                xamlMember.Setter = set_19_EventTriggerBehavior_SourceObject;
                 break;
             case "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.AssociatedObject":
                 userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior");
                 xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "AssociatedObject", "Windows.UI.Xaml.DependencyObject");
-                xamlMember.Getter = get_18_EventTriggerBehavior_AssociatedObject;
+                xamlMember.Getter = get_20_EventTriggerBehavior_AssociatedObject;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.Xaml.Interactions.Core.InvokeCommandAction.Command":
                 userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.InvokeCommandAction");
                 xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "Command", "System.Windows.Input.ICommand");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_19_InvokeCommandAction_Command;
-                xamlMember.Setter = set_19_InvokeCommandAction_Command;
+                xamlMember.Getter = get_21_InvokeCommandAction_Command;
+                xamlMember.Setter = set_21_InvokeCommandAction_Command;
                 break;
             case "Microsoft.Xaml.Interactions.Core.InvokeCommandAction.CommandParameter":
                 userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.InvokeCommandAction");
                 xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "CommandParameter", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_20_InvokeCommandAction_CommandParameter;
-                xamlMember.Setter = set_20_InvokeCommandAction_CommandParameter;
+                xamlMember.Getter = get_22_InvokeCommandAction_CommandParameter;
+                xamlMember.Setter = set_22_InvokeCommandAction_CommandParameter;
                 break;
             case "Microsoft.Xaml.Interactions.Core.InvokeCommandAction.InputConverter":
                 userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.InvokeCommandAction");
                 xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "InputConverter", "Windows.UI.Xaml.Data.IValueConverter");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_21_InvokeCommandAction_InputConverter;
-                xamlMember.Setter = set_21_InvokeCommandAction_InputConverter;
+                xamlMember.Getter = get_23_InvokeCommandAction_InputConverter;
+                xamlMember.Setter = set_23_InvokeCommandAction_InputConverter;
                 break;
             case "Microsoft.Xaml.Interactions.Core.InvokeCommandAction.InputConverterParameter":
                 userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.InvokeCommandAction");
                 xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "InputConverterParameter", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_22_InvokeCommandAction_InputConverterParameter;
-                xamlMember.Setter = set_22_InvokeCommandAction_InputConverterParameter;
+                xamlMember.Getter = get_24_InvokeCommandAction_InputConverterParameter;
+                xamlMember.Setter = set_24_InvokeCommandAction_InputConverterParameter;
                 break;
             case "Microsoft.Xaml.Interactions.Core.InvokeCommandAction.InputConverterLanguage":
                 userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.InvokeCommandAction");
                 xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "InputConverterLanguage", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_23_InvokeCommandAction_InputConverterLanguage;
-                xamlMember.Setter = set_23_InvokeCommandAction_InputConverterLanguage;
+                xamlMember.Getter = get_25_InvokeCommandAction_InputConverterLanguage;
+                xamlMember.Setter = set_25_InvokeCommandAction_InputConverterLanguage;
                 break;
             case "App10.ViewModel.BookingVM.Books":
                 userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("App10.ViewModel.BookingVM");
                 xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "Books", "System.Collections.ObjectModel.ObservableCollection`1<App10.Model.Booking>");
-                xamlMember.Getter = get_24_BookingVM_Books;
-                xamlMember.Setter = set_24_BookingVM_Books;
+                xamlMember.Getter = get_26_BookingVM_Books;
+                xamlMember.Setter = set_26_BookingVM_Books;
                 break;
             case "App10.Model.Booking.OrderedBy":
                 userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("App10.Model.Booking");
                 xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "OrderedBy", "String");
-                xamlMember.Getter = get_25_Booking_OrderedBy;
-                xamlMember.Setter = set_25_Booking_OrderedBy;
+                xamlMember.Getter = get_27_Booking_OrderedBy;
+                xamlMember.Setter = set_27_Booking_OrderedBy;
                 break;
             case "App10.Model.Booking.CheckInDateTime":
                 userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("App10.Model.Booking");
                 xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "CheckInDateTime", "System.DateTime");
-                xamlMember.Getter = get_26_Booking_CheckInDateTime;
-                xamlMember.Setter = set_26_Booking_CheckInDateTime;
+                xamlMember.Getter = get_28_Booking_CheckInDateTime;
+                xamlMember.Setter = set_28_Booking_CheckInDateTime;
                 break;
             case "App10.Model.Booking.CheckOutDateTime":
                 userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("App10.Model.Booking");
                 xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "CheckOutDateTime", "System.DateTime");
-                xamlMember.Getter = get_27_Booking_CheckOutDateTime;
-                xamlMember.Setter = set_27_Booking_CheckOutDateTime;
+                xamlMember.Getter = get_29_Booking_CheckOutDateTime;
+                xamlMember.Setter = set_29_Booking_CheckOutDateTime;
                 break;
             case "App10.Model.Booking.OrderDateTime":
                 userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("App10.Model.Booking");
                 xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "OrderDateTime", "System.DateTime");
-                xamlMember.Getter = get_28_Booking_OrderDateTime;
-                xamlMember.Setter = set_28_Booking_OrderDateTime;
+                xamlMember.Getter = get_30_Booking_OrderDateTime;
+                xamlMember.Setter = set_30_Booking_OrderDateTime;
                 break;
             case "App10.Model.Booking.NumberOfPpl":
                 userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("App10.Model.Booking");
                 xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "NumberOfPpl", "Int32");
-                xamlMember.Getter = get_29_Booking_NumberOfPpl;
-                xamlMember.Setter = set_29_Booking_NumberOfPpl;
+                xamlMember.Getter = get_31_Booking_NumberOfPpl;
+                xamlMember.Setter = set_31_Booking_NumberOfPpl;
+                break;
+            case "App10.Model.Booking.ThisAccomodation":
+                userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("App10.Model.Booking");
+                xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "ThisAccomodation", "App10.Model.Accomodation");
+                xamlMember.Getter = get_32_Booking_ThisAccomodation;
+                xamlMember.Setter = set_32_Booking_ThisAccomodation;
                 break;
             case "App10.Model.Booking.BookNumber":
                 userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("App10.Model.Booking");
                 xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "BookNumber", "Int32");
-                xamlMember.Getter = get_30_Booking_BookNumber;
-                xamlMember.Setter = set_30_Booking_BookNumber;
+                xamlMember.Getter = get_33_Booking_BookNumber;
+                xamlMember.Setter = set_33_Booking_BookNumber;
                 break;
             case "App10.ViewModel.BookingVM.Numbers":
                 userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("App10.ViewModel.BookingVM");
                 xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "Numbers", "System.Collections.ObjectModel.ObservableCollection`1<Int32>");
-                xamlMember.Getter = get_31_BookingVM_Numbers;
-                xamlMember.Setter = set_31_BookingVM_Numbers;
+                xamlMember.Getter = get_34_BookingVM_Numbers;
+                xamlMember.Setter = set_34_BookingVM_Numbers;
+                break;
+            case "App10.ViewModel.BookingVM.CzechOut":
+                userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("App10.ViewModel.BookingVM");
+                xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "CzechOut", "System.DateTimeOffset");
+                xamlMember.Getter = get_35_BookingVM_CzechOut;
+                xamlMember.Setter = set_35_BookingVM_CzechOut;
+                break;
+            case "App10.ViewModel.BookingVM.CzechIn":
+                userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("App10.ViewModel.BookingVM");
+                xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "CzechIn", "System.DateTimeOffset");
+                xamlMember.Getter = get_36_BookingVM_CzechIn;
+                xamlMember.Setter = set_36_BookingVM_CzechIn;
+                break;
+            case "App10.ViewModel.BookingVM.ChekIns":
+                userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("App10.ViewModel.BookingVM");
+                xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "ChekIns", "System.DateTime");
+                xamlMember.Getter = get_37_BookingVM_ChekIns;
+                xamlMember.Setter = set_37_BookingVM_ChekIns;
+                break;
+            case "App10.ViewModel.BookingVM.ChekAus":
+                userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("App10.ViewModel.BookingVM");
+                xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "ChekAus", "System.DateTime");
+                xamlMember.Getter = get_38_BookingVM_ChekAus;
+                xamlMember.Setter = set_38_BookingVM_ChekAus;
                 break;
             case "App10.ViewModel.BookingVM.CreditCard":
                 userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("App10.ViewModel.BookingVM");
                 xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "CreditCard", "Int32");
-                xamlMember.Getter = get_32_BookingVM_CreditCard;
-                xamlMember.Setter = set_32_BookingVM_CreditCard;
-                break;
-            case "App10.ViewModel.BookingVM.CzechzIn":
-                userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("App10.ViewModel.BookingVM");
-                xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "CzechzIn", "System.DateTime");
-                xamlMember.Getter = get_33_BookingVM_CzechzIn;
-                xamlMember.Setter = set_33_BookingVM_CzechzIn;
-                break;
-            case "App10.ViewModel.BookingVM.CzechOut":
-                userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("App10.ViewModel.BookingVM");
-                xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "CzechOut", "System.DateTime");
-                xamlMember.Getter = get_34_BookingVM_CzechOut;
-                xamlMember.Setter = set_34_BookingVM_CzechOut;
-                break;
-            case "App10.ViewModel.BookingVM.DaySpan":
-                userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("App10.ViewModel.BookingVM");
-                xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "DaySpan", "TimeSpan");
-                xamlMember.Getter = get_35_BookingVM_DaySpan;
-                xamlMember.Setter = set_35_BookingVM_DaySpan;
+                xamlMember.Getter = get_39_BookingVM_CreditCard;
+                xamlMember.Setter = set_39_BookingVM_CreditCard;
                 break;
             case "App10.ViewModel.BookingVM.IsConfirmed":
                 userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("App10.ViewModel.BookingVM");
                 xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "IsConfirmed", "Boolean");
-                xamlMember.Getter = get_36_BookingVM_IsConfirmed;
-                xamlMember.Setter = set_36_BookingVM_IsConfirmed;
+                xamlMember.Getter = get_40_BookingVM_IsConfirmed;
+                xamlMember.Setter = set_40_BookingVM_IsConfirmed;
                 break;
             case "App10.ViewModel.BookingVM.IsAllInc":
                 userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("App10.ViewModel.BookingVM");
                 xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "IsAllInc", "Boolean");
-                xamlMember.Getter = get_37_BookingVM_IsAllInc;
-                xamlMember.Setter = set_37_BookingVM_IsAllInc;
+                xamlMember.Getter = get_41_BookingVM_IsAllInc;
+                xamlMember.Setter = set_41_BookingVM_IsAllInc;
                 break;
             case "App10.ViewModel.BookingVM.HowManyPpl":
                 userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("App10.ViewModel.BookingVM");
                 xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "HowManyPpl", "Int32");
-                xamlMember.Getter = get_38_BookingVM_HowManyPpl;
-                xamlMember.Setter = set_38_BookingVM_HowManyPpl;
+                xamlMember.Getter = get_42_BookingVM_HowManyPpl;
+                xamlMember.Setter = set_42_BookingVM_HowManyPpl;
                 break;
             case "App10.ViewModel.BookingVM.Cost":
                 userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("App10.ViewModel.BookingVM");
                 xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "Cost", "Int32");
-                xamlMember.Getter = get_39_BookingVM_Cost;
-                xamlMember.Setter = set_39_BookingVM_Cost;
+                xamlMember.Getter = get_43_BookingVM_Cost;
+                xamlMember.Setter = set_43_BookingVM_Cost;
                 break;
             case "App10.ViewModel.BookingVM.Success":
                 userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("App10.ViewModel.BookingVM");
                 xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "Success", "Int32");
-                xamlMember.Getter = get_40_BookingVM_Success;
-                xamlMember.Setter = set_40_BookingVM_Success;
+                xamlMember.Getter = get_44_BookingVM_Success;
+                xamlMember.Setter = set_44_BookingVM_Success;
                 break;
             case "App10.ViewModel.BookingVM.AddBookingCommand":
                 userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("App10.ViewModel.BookingVM");
                 xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "AddBookingCommand", "App10.Common.RelayCommand");
-                xamlMember.Getter = get_41_BookingVM_AddBookingCommand;
-                xamlMember.Setter = set_41_BookingVM_AddBookingCommand;
+                xamlMember.Getter = get_45_BookingVM_AddBookingCommand;
+                xamlMember.Setter = set_45_BookingVM_AddBookingCommand;
                 break;
             case "App10.ViewModel.BookingVM.GetBookCommand":
                 userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("App10.ViewModel.BookingVM");
                 xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "GetBookCommand", "App10.Common.RelayCommand");
-                xamlMember.Getter = get_42_BookingVM_GetBookCommand;
-                xamlMember.Setter = set_42_BookingVM_GetBookCommand;
+                xamlMember.Getter = get_46_BookingVM_GetBookCommand;
+                xamlMember.Setter = set_46_BookingVM_GetBookCommand;
+                break;
+            case "App10.ViewModel.BookingVM.HandleCommand":
+                userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("App10.ViewModel.BookingVM");
+                xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "HandleCommand", "App10.Common.RelayCommand");
+                xamlMember.Getter = get_47_BookingVM_HandleCommand;
+                xamlMember.Setter = set_47_BookingVM_HandleCommand;
+                break;
+            case "App10.ViewModel.AccomodationVM.Success":
+                userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("App10.ViewModel.AccomodationVM");
+                xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "Success", "Int32");
+                xamlMember.Getter = get_48_AccomodationVM_Success;
+                xamlMember.Setter = set_48_AccomodationVM_Success;
+                break;
+            case "App10.ViewModel.AccomodationVM.Accomodations":
+                userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("App10.ViewModel.AccomodationVM");
+                xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "Accomodations", "System.Collections.ObjectModel.ObservableCollection`1<App10.Model.Accomodation>");
+                xamlMember.Getter = get_49_AccomodationVM_Accomodations;
+                xamlMember.Setter = set_49_AccomodationVM_Accomodations;
+                break;
+            case "App10.Model.Accomodation.Adress":
+                userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("App10.Model.Accomodation");
+                xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "Adress", "String");
+                xamlMember.Getter = get_50_Accomodation_Adress;
+                xamlMember.Setter = set_50_Accomodation_Adress;
+                break;
+            case "App10.Model.Accomodation.Price":
+                userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("App10.Model.Accomodation");
+                xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "Price", "Int32");
+                xamlMember.Getter = get_51_Accomodation_Price;
+                xamlMember.Setter = set_51_Accomodation_Price;
+                break;
+            case "App10.Model.Accomodation.AccName":
+                userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("App10.Model.Accomodation");
+                xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "AccName", "String");
+                xamlMember.Getter = get_52_Accomodation_AccName;
+                xamlMember.Setter = set_52_Accomodation_AccName;
+                break;
+            case "App10.ViewModel.AccomodationVM.LyonCommand":
+                userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("App10.ViewModel.AccomodationVM");
+                xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "LyonCommand", "App10.Common.RelayCommand");
+                xamlMember.Getter = get_53_AccomodationVM_LyonCommand;
+                xamlMember.Setter = set_53_AccomodationVM_LyonCommand;
+                break;
+            case "App10.ViewModel.AccomodationVM.CanBook":
+                userType = (global::App10.App10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("App10.ViewModel.AccomodationVM");
+                xamlMember = new global::App10.App10_XamlTypeInfo.XamlMember(this, "CanBook", "Boolean");
+                xamlMember.Getter = get_54_AccomodationVM_CanBook;
+                xamlMember.Setter = set_54_AccomodationVM_CanBook;
                 break;
             }
             return xamlMember;
