@@ -1,1 +1,1 @@
-C:\Users\pc\Desktop\project - Copy\App10\App10.csproj;x86
+C:\Users\pc\Documents\GitHubVisualStudio\bert\project - Copy\App10\App10.csproj;x86

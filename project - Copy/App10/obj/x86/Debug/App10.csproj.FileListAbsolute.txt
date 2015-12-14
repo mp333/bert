@@ -2248,3 +2248,8 @@ C:\Users\pc\Desktop\project - Copy\App10\obj\x86\Debug\View\MyBookings.g.cs
 C:\Users\pc\Desktop\project - Copy\App10\obj\x86\Debug\View\MyBookings.xaml
 C:\Users\pc\Desktop\project - Copy\App10\obj\x86\Debug\View\MyBookings.xbf
 C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\View\MyBookings.xbf
+C:\Users\pc\Documents\GitHubVisualStudio\bert\project - Copy\App10\bin\x86\Debug\View\MyBookings.xbf
+C:\Users\pc\Documents\GitHubVisualStudio\bert\project - Copy\App10\obj\x86\Debug\View\MyBookings.g.i.cs
+C:\Users\pc\Documents\GitHubVisualStudio\bert\project - Copy\App10\obj\x86\Debug\View\MyBookings.g.cs
+C:\Users\pc\Documents\GitHubVisualStudio\bert\project - Copy\App10\obj\x86\Debug\View\MyBookings.xaml
+C:\Users\pc\Documents\GitHubVisualStudio\bert\project - Copy\App10\obj\x86\Debug\View\MyBookings.xbf
