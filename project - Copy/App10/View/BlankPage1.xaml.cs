@@ -61,5 +61,10 @@ namespace App10.View
         {
             Frame.Navigate(typeof (MainPage));
         }
+
+        private void Cont_OnClick(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof (MainPage));
+        }
     }
 }

@@ -27,14 +27,31 @@ namespace App10.View
             this.InitializeComponent();
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
+
+
+        private void city0_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(BlankPage1));
+            Frame.Navigate(typeof (City1));
         }
 
-        private void button1_Click(object sender, RoutedEventArgs e)
+        private void city1_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof (BookingPage));
+            Frame.Navigate(typeof (City2));
+        }
+
+        private void city4_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof (City3));
+        }
+
+        private void city5_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof (City4));
+        }
+
+        private void button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof (BlankPage1));
         }
     }
 }

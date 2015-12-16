@@ -11,6 +11,7 @@ using System.ComponentModel;
 using System.Windows.Input;
 using Windows.UI.Xaml.Controls;
 using System.Runtime.CompilerServices;
+using Windows.UI.Popups;
 
 namespace App10.ViewModel
 {
@@ -30,8 +31,8 @@ namespace App10.ViewModel
         
         public CustomerList()
         {
-            LoginCommand = new RelayCommand(Login, CanLogin);
-            AddCustomerCommand = new RelayCommand(Register, CanRegister);
+            LoginCommand = new RelayCommand(Login);
+            AddCustomerCommand = new RelayCommand(Register);
             GetListCommand = new RelayCommand(LoadCustomers);
             List1 = new ObservableCollection<Customer>();
             LoadCustomers(); 
@@ -63,7 +64,7 @@ namespace App10.ViewModel
 
         public bool CanRegister()
         {
-            return Username != null && Password != null;
+            return Username != null && Password != null && FirstName != null && LastName != null;
         }
 
         private int success = 0;
@@ -110,19 +111,71 @@ namespace App10.ViewModel
 
         public RelayCommand LoginCommand { get; set; }
 
+        private string fname;
+        private string lname;
+
+        public string LastName
+        {
+            get
+            {
+                return lname;
+
+            }
+            set
+            {
+                lname = value;
+                OnPropertyChanged();
+            }
+        }
+        public string FirstName
+        {
+            get
+            {
+                return fname;
+                
+            }
+            set
+            {
+                fname = value;
+                OnPropertyChanged();
+            }
+        }
+
         public void Login()
         {
-            Success = 100; //makesxwxwxrti button visible
-            CurrentCustomer = new Customer(Username2,Password2);
-            IsLoggedIn = true;
-            
+            if (IsChecked)
+            {
+                if (CanLogin())
+                {
+                    Success = 100; //makesxwxwxrti button visible
+
+                    CurrentCustomer = new Customer(Username2, Password2);
+                    IsLoggedIn = true;
+                }
+                else
+                {
+                    MessageDialogHelper.Show("Wrong username or password", "Invalid login");
+                }
+
+            }
+            else
+            {
+                MessageDialogHelper.Show("Login not confirmed","Confirm");
+            }
         }
+
         public void Register()
         {
-             
-           
-            List1.Add(new Customer(Username, Password));
-            PersistencyService.SaveCustomersAsJsonAsync(List1);
+            if (CanRegister())
+            {
+                List1.Add(new Customer(Username, Password));
+                PersistencyService.SaveCustomersAsJsonAsync(List1);
+                MessageDialogHelper.Show("You can now login.", "Success!");
+            }
+            else
+            {
+                MessageDialogHelper.Show("all fields must be filled", "Invalid data");
+            }
 
         }
 
@@ -144,7 +197,7 @@ namespace App10.ViewModel
 
         public bool CanLogin()
         {
-            if (List1.Contains(new Customer(Username2, Password2)) && IsChecked )
+            if (List1.Contains(new Customer(Username2, Password2)))
             {
                 return true;
             }
@@ -152,6 +205,14 @@ namespace App10.ViewModel
                 return false;
         }
 
+        private class MessageDialogHelper
+        {
+            public static async void Show(string content, string title)
+            {
+                MessageDialog messageDialog = new MessageDialog(content, title);
+                await messageDialog.ShowAsync();
+            }
+        }
 
     }
 }

@@ -15,18 +15,92 @@
         <locas:AccomodationVM/>
     </Page.DataContext>
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-        <Button x:Name="button" Click="button_Click" Content="LogOut" Height="111" Margin="120,84,0,0" VerticalAlignment="Top" Width="249"/>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="25" Margin="565,20,0,0" TextWrapping="Wrap" Text= "{Binding CurrentCustomer, Mode=TwoWay}" VerticalAlignment="Top" Width="170"/>
-        <Button x:Name="button1" Content="Booking" IsEnabled="{Binding CanBook}" Opacity ="{Binding Success, Mode = Twoway}" HorizontalAlignment="Left" Height="111" Margin="390,84,0,0" VerticalAlignment="Top" Width="225" Click="button1_Click"/>
-        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Height="120" Margin="810,20,0,0" TextWrapping="Wrap" Text="Lyon" FontSize="69" VerticalAlignment="Top" Width="180"/>
-        <Button x:Name="button2" Content="Book Lyon?"  HorizontalAlignment="Left" Height="95" Margin="775,140,0,0" VerticalAlignment="Top" Width="215">
-            <interactivity:Interaction.Behaviors>
-                <core:EventTriggerBehavior EventName="Click">
-                    <core:InvokeCommandAction Command="{Binding LyonCommand}"/>
-                </core:EventTriggerBehavior>
-            </interactivity:Interaction.Behaviors>
-        </Button>
+    <Grid Background="WhiteSmoke">
+
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40">
+            </RowDefinition>
+            <RowDefinition Height="150">
+            </RowDefinition>
+            <RowDefinition Height="100">
+            </RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto">
+            </ColumnDefinition>
+            <ColumnDefinition Width="897">
+            </ColumnDefinition>
+            <ColumnDefinition Width="auto">
+            </ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <ListView 
+            Grid.Row="1"
+            x:Name="CityBrowse" 
+            HorizontalAlignment="Left" 
+            Height="225" 
+            Margin="26,0,0,0" 
+            VerticalAlignment="Top" 
+            Width="179"
+            Header="Browse Cities"
+            FontSize="30"
+            Foreground="#2f2e2e" Grid.ColumnSpan="2" Grid.RowSpan="2">
+            <Button 
+                Width="142"
+                Height="35"
+                Content="Paris"
+                x:Name="city0"
+                Margin="0,0,0,0" 
+                Click="city0_Click"
+                
+                BorderThickness="2"
+                BorderBrush="#2f2e2e"
+                Foreground="#2f2e2e"
+                />
+            <Button 
+                Width="142"
+                Height="35"
+                Content="Lyon"
+                x:Name="city1"
+       
+                BorderThickness="2"
+                BorderBrush="#2f2e2e"
+                Foreground="#2f2e2e" Click="city1_Click"
+                />
+
+            <Button 
+                Width="142"
+                Height="35"
+                Content="Nice"
+                x:Name="city4"
+
+                BorderThickness="2"
+                BorderBrush="#2f2e2e"
+                Foreground="#2f2e2e" Click="city4_Click"
+                />
+            <Button 
+                Width="142"
+                Height="35"
+                Content="Calais"
+                x:Name="city5"
+
+                BorderThickness="2"
+                BorderBrush="#2f2e2e"
+                Foreground="#2f2e2e" Click="city5_Click"
+                />
+
+        </ListView>
+        <Button x:Name="button" Content="LogOut" Grid.Column="2" HorizontalAlignment="Left" Height="35" Margin="188,10,-353,0" Grid.Row="1" VerticalAlignment="Top" Width="165" Click="button_Click_1"/>
+        <Button x:Name="button1" Content="My Bookings" HorizontalAlignment="Left" Height="65" Margin="48,65,-278,0" Grid.Row="1" VerticalAlignment="Top" Width="230" Grid.Column="2"/>
+        <TextBlock x:Name="textBlock" Grid.Column="2" HorizontalAlignment="Left" Height="35" Margin="10,10,-183,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding CurrentCustomer}" VerticalAlignment="Top" Width="173"/>
+        <Image x:Name="image" Source="../Assets/index.jpg" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="120" Margin="485,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="245"/>
+        <Image x:Name="image1" Source="../Assets/Sunset.jpg" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="465" Margin="270,10,-63,-375" Grid.Row="2" VerticalAlignment="Top" Width="690"/>
+
+
+
+
+
     </Grid>
 </Page>

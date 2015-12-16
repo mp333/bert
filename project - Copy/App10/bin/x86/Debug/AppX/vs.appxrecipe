@@ -22,25 +22,101 @@
     <AppXManifest Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-14T14:22:00.070</Modified>
+      <Modified>2015-12-16T02:56:42.934</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\App10.exe">
       <PackagePath>App10.exe</PackagePath>
-      <Modified>2015-12-14T14:22:00.068</Modified>
+      <Modified>2015-12-16T02:56:42.931</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\App10.xr.xml">
       <PackagePath>App10.xr.xml</PackagePath>
-      <Modified>2015-12-14T14:19:19.103</Modified>
+      <Modified>2015-12-16T01:47:24.433</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\ApplicationInsights.config">
       <PackagePath>ApplicationInsights.config</PackagePath>
       <Modified>2015-11-19T09:38:00.634</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\Assets\1.scale-200.jpg">
+      <PackagePath>Assets\1.scale-200.jpg</PackagePath>
+      <Modified>2015-12-15T15:40:16.618</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\Assets\10.jpg">
+      <PackagePath>Assets\10.jpg</PackagePath>
+      <Modified>2015-12-15T15:41:00.015</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\Assets\11.jpg">
+      <PackagePath>Assets\11.jpg</PackagePath>
+      <Modified>2015-12-15T15:41:03.379</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\Assets\12.jpg">
+      <PackagePath>Assets\12.jpg</PackagePath>
+      <Modified>2015-12-15T15:40:56.941</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\Assets\2.jpg">
+      <PackagePath>Assets\2.jpg</PackagePath>
+      <Modified>2015-12-15T15:40:53.646</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\Assets\3.jpg">
+      <PackagePath>Assets\3.jpg</PackagePath>
+      <Modified>2015-12-15T15:40:41.493</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\Assets\4.jpg">
+      <PackagePath>Assets\4.jpg</PackagePath>
+      <Modified>2015-12-15T15:40:25.351</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\Assets\5.jpg">
+      <PackagePath>Assets\5.jpg</PackagePath>
+      <Modified>2015-12-15T15:41:14.561</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\Assets\6.jpg">
+      <PackagePath>Assets\6.jpg</PackagePath>
+      <Modified>2015-12-15T15:41:06.690</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\Assets\7.jpg">
+      <PackagePath>Assets\7.jpg</PackagePath>
+      <Modified>2015-12-15T15:40:20.480</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\Assets\8.jpg">
+      <PackagePath>Assets\8.jpg</PackagePath>
+      <Modified>2015-12-15T15:41:09.953</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\Assets\9.jpg">
+      <PackagePath>Assets\9.jpg</PackagePath>
+      <Modified>2015-12-15T15:40:47.873</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\Assets\add.jpg">
+      <PackagePath>Assets\add.jpg</PackagePath>
+      <Modified>2015-12-16T02:40:37.832</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\Assets\ap.jpg">
+      <PackagePath>Assets\ap.jpg</PackagePath>
+      <Modified>2015-12-16T00:11:15.604</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\Assets\apt.jpg">
+      <PackagePath>Assets\apt.jpg</PackagePath>
+      <Modified>2015-12-16T02:32:25.658</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\Assets\bed.jpg">
+      <PackagePath>Assets\bed.jpg</PackagePath>
+      <Modified>2015-12-16T02:36:30.708</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\Assets\haus.jpg">
+      <PackagePath>Assets\haus.jpg</PackagePath>
+      <Modified>2015-12-16T00:11:06.645</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\Assets\index.jpg">
+      <PackagePath>Assets\index.jpg</PackagePath>
+      <Modified>2015-12-16T00:37:56.207</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2015-08-26T23:38:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\Assets\pool.jpg">
+      <PackagePath>Assets\pool.jpg</PackagePath>
+      <Modified>2015-12-16T00:11:44.833</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
@@ -67,6 +143,18 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-08-26T23:38:34.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\Assets\Sunset.jpg">
+      <PackagePath>Assets\Sunset.jpg</PackagePath>
+      <Modified>2015-12-16T01:58:46.999</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\Assets\view2.jpg">
+      <PackagePath>Assets\view2.jpg</PackagePath>
+      <Modified>2015-12-16T02:30:30.218</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\Assets\vila.jpg">
+      <PackagePath>Assets\vila.jpg</PackagePath>
+      <Modified>2015-12-16T00:10:55.905</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
@@ -78,7 +166,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\entrypoint\App10.exe">
       <PackagePath>entrypoint\App10.exe</PackagePath>
-      <Modified>2015-12-14T14:21:58.818</Modified>
+      <Modified>2015-12-16T02:56:40.020</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -122,7 +210,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-12-14T14:21:59.560</Modified>
+      <Modified>2015-12-16T02:56:41.659</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>

@@ -115,6 +115,18 @@
     <Compile Include="View\BookingPage.xaml.cs">
       <DependentUpon>BookingPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\City1.xaml.cs">
+      <DependentUpon>City1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\City2.xaml.cs">
+      <DependentUpon>City2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\City3.xaml.cs">
+      <DependentUpon>City3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\City4.xaml.cs">
+      <DependentUpon>City4.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -129,6 +141,28 @@
     <None Include="App10_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\1.scale-200.jpg" />
+    <Content Include="Assets\10.jpg" />
+    <Content Include="Assets\11.jpg" />
+    <Content Include="Assets\12.jpg" />
+    <Content Include="Assets\2.jpg" />
+    <Content Include="Assets\3.jpg" />
+    <Content Include="Assets\4.jpg" />
+    <Content Include="Assets\5.jpg" />
+    <Content Include="Assets\6.jpg" />
+    <Content Include="Assets\7.jpg" />
+    <Content Include="Assets\8.jpg" />
+    <Content Include="Assets\9.jpg" />
+    <Content Include="Assets\add.jpg" />
+    <Content Include="Assets\ap.jpg" />
+    <Content Include="Assets\apt.jpg" />
+    <Content Include="Assets\bed.jpg" />
+    <Content Include="Assets\haus.jpg" />
+    <Content Include="Assets\index.jpg" />
+    <Content Include="Assets\pool.jpg" />
+    <Content Include="Assets\Sunset.jpg" />
+    <Content Include="Assets\view2.jpg" />
+    <Content Include="Assets\vila.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -153,6 +187,22 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\BookingPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\City1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\City2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\City3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\City4.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

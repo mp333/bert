@@ -26,5 +26,10 @@ namespace App10.View
         {
             this.InitializeComponent();
         }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof (MainPage));
+        }
     }
 }

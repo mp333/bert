@@ -16,7 +16,10 @@
     
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <ListView x:Name="listView"  ItemsSource="{Binding Books}" Opacity="{Binding Success}" HorizontalAlignment="Left" Height="391" Margin="420,34,0,0" VerticalAlignment="Top" Width="1380"/>
-        <Button x:Name="button" Content="Show my Bookings" HorizontalAlignment="Left" Height="90" Margin="75,125,0,0" VerticalAlignment="Top" Width="230">
+        <Button x:Name="button" Background="#181818"
+            BorderThickness="2"
+            BorderBrush="#2f2e2e"
+            Foreground="#2f2e2e" Content="Show my Bookings" HorizontalAlignment="Left" Height="90" Margin="75,125,0,0" VerticalAlignment="Top" Width="230">
             <interactivity:Interaction.Behaviors>
                 <core:EventTriggerBehavior EventName="Click">
                     <core:InvokeCommandAction Command="{Binding GetBookCommand}"/>
@@ -24,5 +27,6 @@
             </interactivity:Interaction.Behaviors>
             </Button>
         <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Height="40"  Margin="75,34,0,0" TextWrapping="Wrap" Text="{Binding CurrentCustomer}" VerticalAlignment="Top" Width="121"/>
+        <Button x:Name="button1" Content="Home" HorizontalAlignment="Left" Height="70" Margin="75,245,0,0" VerticalAlignment="Top" Width="230" Click="button1_Click"/>
     </Grid>
 </Page>

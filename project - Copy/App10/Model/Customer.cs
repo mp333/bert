@@ -22,12 +22,13 @@ using App10.ViewModel;
         {
             Name = username;
             Pass = password;
+
             ContactInfo = "blabla contact info";
         }
 
         public override string ToString()
         {
-            return string.Format("Logged in as {0} ",  Name);
+            return string.Format("Logged in as {0} ",Name);
         }
 
         public bool Equals(Customer other)

@@ -33,5 +33,14 @@ namespace App10.View
         }
 
 
+        private void Button2_OnClick(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof (BlankPage1));
+        }
+
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof (MainPage));
+        }
     }
 }

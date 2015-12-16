@@ -246,6 +246,7 @@ namespace App10.ViewModel
                 else if (IsAllInc != true)
                 {
                     Cost = CurrentAccomodation.Price * (HowManyPpl + 1) * xx.Days;
+                    
                 }
                 IsConfirmed = true;
             }
@@ -256,10 +257,12 @@ namespace App10.ViewModel
             }
             else if (DateCalc() == false)
             {
-                MessageDialogHelper.Show("Booking must be in the future and", "Invalid Dates");
+                IsConfirmed = false;
+                MessageDialogHelper.Show("Check in must be in the future, and earlier than check out", "Invalid Dates");
             }
             else if (HowManyPpl+1==0 || CreditCard >0 == false)
             {
+                IsConfirmed = false;
                 MessageDialogHelper.Show(" Please fill out your info", "Invalid Info");
             }
         }
@@ -270,6 +273,7 @@ namespace App10.ViewModel
             Books.Add(new Booking(CurrentAccomodation, CzechIn.Date, CzechOut.Date, CurrentCustomer.Name, HowManyPpl+1));
             PersistencyService.SaveBookingsAsJsonAsync(Books);
             IsConfirmed = false;
+            Success = 100;
         }
 
         private class MessageDialogHelper

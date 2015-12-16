@@ -14,39 +14,48 @@
     <Page.DataContext>
         <locad:BookingVM/>
     </Page.DataContext>
-    
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Button x:Name="button1" HorizontalAlignment="Left" Content="Book" Height="80" Margin="785,85,0,0" VerticalAlignment="Top" Width="296">
+
+    <Grid Background="Beige">
+        <Button x:Name="button1"  HorizontalAlignment="Left" Content="Book" Height="80" Margin="785,92,0,0"  Background="SkyBlue"
+            BorderThickness="2"
+            BorderBrush="#2f2e2e"
+            Foreground="#2f2e2e" VerticalAlignment="Top" Width="296">
             <interactivity:Interaction.Behaviors>
                 <core:EventTriggerBehavior EventName="Click">
                     <core:InvokeCommandAction Command="{Binding AddBookingCommand}"/>
                 </core:EventTriggerBehavior>
             </interactivity:Interaction.Behaviors>
         </Button>
-        <ComboBox x:Name="comboBox" ItemsSource="{Binding Numbers}" SelectedIndex="{Binding HowManyPpl, Mode = TwoWay}"  SelectedValue="{Binding HowManyPpl, Mode = TwoWay}" HorizontalAlignment="Left" Height="35" Margin="785,182,0,0" VerticalAlignment="Top" Width="130">
+        <ComboBox x:Name="comboBox" Header="People"  ItemsSource="{Binding Numbers}" SelectedIndex="{Binding HowManyPpl, Mode = TwoWay}"  SelectedValue="{Binding HowManyPpl, Mode = TwoWay}" HorizontalAlignment="Left" Height="63" Margin="785,182,0,0" VerticalAlignment="Top" Width="130">
             <ComboBoxItem >1</ComboBoxItem>
             <ComboBoxItem >2</ComboBoxItem>
             <ComboBoxItem >3</ComboBoxItem>
             <ComboBoxItem >4</ComboBoxItem>
-            </ComboBox>
-            <ListView Margin="120,238,0,0" Opacity ="100"  ItemsSource="{Binding Books}" SelectedIndex="{Binding SelectedIndex, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="600" Height="284" RenderTransformOrigin="0.498,0.529" />
-        <DatePicker HorizontalAlignment="Left" Header="Check In" Date="{Binding CzechIn,UpdateSourceTrigger=PropertyChanged , Mode=TwoWay}"  Height="65" Margin="785,238,0,0" VerticalAlignment="Top" Width="265"/>
-        <CheckBox x:Name="checkBox"  Content="AllInclusive" HorizontalAlignment="Left" IsChecked="{Binding IsAllInc, Mode=TwoWay}" Height="30" Margin="780,416,0,0" VerticalAlignment="Top" Width="271"/>
-       <Button x:Name="button" Content="My Bookings" HorizontalAlignment="Left" Height="80" Margin="120,85,0,0" VerticalAlignment="Top" Width="250" Click="button_Click"/>
-        <CheckBox x:Name="checkBox1"  Content="Confirm" IsChecked="{Binding IsConfirmed, Mode=TwoWay}" HorizontalAlignment="Left" Height="0" Margin="780,448,0,0" VerticalAlignment="Top" Width="271">
-        <interactivity:Interaction.Behaviors>
-            <core:EventTriggerBehavior EventName="Click">
-                <core:InvokeCommandAction Command="{Binding HandleCommand}"/>
-            </core:EventTriggerBehavior>
-        </interactivity:Interaction.Behaviors>
+        </ComboBox>
+        <ListView Header="This accomodation is booked on these dates:" BorderThickness="2" BorderBrush="Black" Margin="120,238,0,0" Opacity ="100"  ItemsSource="{Binding Books}" SelectedIndex="{Binding SelectedIndex, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="600" Height="284" RenderTransformOrigin="0.498,0.529" />
+        <DatePicker HorizontalAlignment="Left" Header="Check In" Date="{Binding CzechIn,UpdateSourceTrigger=PropertyChanged , Mode=TwoWay}"  Height="65" Margin="785,290,0,0" VerticalAlignment="Top" Width="265"/>
+        <CheckBox x:Name="checkBox"  Content="AllInclusive" HorizontalAlignment="Left" IsChecked="{Binding IsAllInc, Mode=TwoWay}" Height="30" Margin="780,453,0,0" VerticalAlignment="Top" Width="271"/>
+        <Button Background="SkyBlue"
+            BorderThickness="2"
+            BorderBrush="#2f2e2e"
+            Foreground="#2f2e2e" x:Name="button" Content="My Bookings" HorizontalAlignment="Left" Height="80" Margin="120,85,0,0" VerticalAlignment="Top" Width="250" Click="button_Click"/>
+
+        <CheckBox x:Name="checkBox1" Content="Confirm" IsChecked="{Binding IsConfirmed, Mode=TwoWay}" HorizontalAlignment="Left" Height="0" Margin="595,140,0,0" VerticalAlignment="Top" Width="125">
+            <interactivity:Interaction.Behaviors>
+                <core:EventTriggerBehavior EventName="Click">
+                    <core:InvokeCommandAction Command="{Binding HandleCommand}"/>
+                </core:EventTriggerBehavior>
+            </interactivity:Interaction.Behaviors>
         </CheckBox>
 
 
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="45" Margin="595,85,0,0" TextWrapping="Wrap" Text="{Binding Cost, Mode = TwoWay}" VerticalAlignment="Top" Width="190"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="35" Margin="960,182,0,0" TextWrapping="Wrap" Text="{Binding CreditCard, Mode=TwoWay}" VerticalAlignment="Top" Width="121"/>
-        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Height="35" Opacity="{Binding Success, Mode =TwoWay}" Margin="595,130,0,0" TextWrapping="Wrap" Text="Success!" VerticalAlignment="Top" Width="185"/>
+        <TextBlock x:Name="textBlock"  HorizontalAlignment="Left" Height="45" FontSize="36" Foreground="Gold" Margin="595,92,0,0" TextWrapping="Wrap" Text="{Binding Cost, Mode = TwoWay}" VerticalAlignment="Top" Width="190"/>
+        <TextBox x:Name="textBox" Header="Credit card N#" HorizontalAlignment="Left" Height="63" Margin="960,182,0,0" TextWrapping="Wrap" Text="{Binding CreditCard, Mode=TwoWay}" VerticalAlignment="Top" Width="121"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Height="35" Opacity="{Binding Success, Mode =TwoWay}" Margin="1120,130,0,0" TextWrapping="Wrap" Text="Success!" VerticalAlignment="Top" Width="120"/>
         <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Height="40"  Margin="960,10,0,0" TextWrapping="Wrap" Text="{Binding CurrentAccomodation}" VerticalAlignment="Top" Width="121"/>
         <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Height="40" Margin="780,10,0,0" TextWrapping="Wrap" Text="{Binding CurrentCustomer}" VerticalAlignment="Top" Width="135"/>
-        <DatePicker Header="Check Out" Date="{Binding CzechOut, UpdateSourceTrigger=PropertyChanged , Mode=TwoWay}" Height="60" Margin="785,330,0,0" VerticalAlignment="Top" Width="286"/> 
+        <DatePicker  Header="Check Out" Date="{Binding CzechOut, UpdateSourceTrigger=PropertyChanged , Mode=TwoWay}" Height="60" Margin="785,355,0,0" VerticalAlignment="Top" Width="286"/>
+        <Button x:Name="button2" Content="Log out" Click="Button2_OnClick" HorizontalAlignment="Left" Height="40" Margin="1120,20,0,0" VerticalAlignment="Top" Width="140"/>
+        <Button x:Name="button3" Content="Home" HorizontalAlignment="Left" Height="40" Margin="120,20,0,0" VerticalAlignment="Top" Width="120" Click="button3_Click"/>
     </Grid>
 </Page>
