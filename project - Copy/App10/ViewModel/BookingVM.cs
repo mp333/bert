@@ -225,10 +225,7 @@ namespace App10.ViewModel
 
                 foreach (var book in books)
                 {
-                    if (book.ThisAccomodation.Equals(CurrentAccomodation)) //    if(book.OrderedBy == CurrentCustomer.Name) place
-                    {
-                        Books.Add(book);
-                    }
+                  Books.Add(book);
                 }
             }
         }

@@ -32,7 +32,7 @@
             <ComboBoxItem >3</ComboBoxItem>
             <ComboBoxItem >4</ComboBoxItem>
         </ComboBox>
-        <ListView Header="This accomodation is booked on these dates:" BorderThickness="2" BorderBrush="Black" Margin="120,238,0,0" Opacity ="100"  ItemsSource="{Binding Books}" SelectedIndex="{Binding SelectedIndex, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="600" Height="284" RenderTransformOrigin="0.498,0.529" />
+        <ListView Header="All bookings:" BorderThickness="2" BorderBrush="Black" Margin="120,238,0,0" Opacity ="100"  ItemsSource="{Binding Books}" SelectedIndex="{Binding SelectedIndex, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="600" Height="284" RenderTransformOrigin="0.498,0.529" />
         <DatePicker HorizontalAlignment="Left" Header="Check In" Date="{Binding CzechIn,UpdateSourceTrigger=PropertyChanged , Mode=TwoWay}"  Height="65" Margin="785,290,0,0" VerticalAlignment="Top" Width="265"/>
         <CheckBox x:Name="checkBox"  Content="AllInclusive" HorizontalAlignment="Left" IsChecked="{Binding IsAllInc, Mode=TwoWay}" Height="30" Margin="780,453,0,0" VerticalAlignment="Top" Width="271"/>
         <Button Background="SkyBlue"
