@@ -22,13 +22,13 @@
     <AppXManifest Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-16T02:56:42.934</Modified>
+      <Modified>2015-12-16T03:20:50.005</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\App10.exe">
       <PackagePath>App10.exe</PackagePath>
-      <Modified>2015-12-16T02:56:42.931</Modified>
+      <Modified>2015-12-16T03:20:50.002</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\App10.xr.xml">
       <PackagePath>App10.xr.xml</PackagePath>
@@ -106,6 +106,10 @@
       <PackagePath>Assets\haus.jpg</PackagePath>
       <Modified>2015-12-16T00:11:06.645</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\Assets\haus2 %281%29.jpg">
+      <PackagePath>Assets\haus2 %281%29.jpg</PackagePath>
+      <Modified>2015-12-16T03:12:34.713</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\Assets\index.jpg">
       <PackagePath>Assets\index.jpg</PackagePath>
       <Modified>2015-12-16T00:37:56.207</Modified>
@@ -147,9 +151,17 @@
       <PackagePath>Assets\Sunset.jpg</PackagePath>
       <Modified>2015-12-16T01:58:46.999</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\Assets\view.jpg">
+      <PackagePath>Assets\view.jpg</PackagePath>
+      <Modified>2015-12-16T02:28:25.653</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\Assets\view2.jpg">
       <PackagePath>Assets\view2.jpg</PackagePath>
       <Modified>2015-12-16T02:30:30.218</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\Assets\view3.jpg">
+      <PackagePath>Assets\view3.jpg</PackagePath>
+      <Modified>2015-12-16T03:12:19.172</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\Assets\vila.jpg">
       <PackagePath>Assets\vila.jpg</PackagePath>
@@ -160,13 +172,17 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-08-26T23:38:34.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\Assets\wine.jpg">
+      <PackagePath>Assets\wine.jpg</PackagePath>
+      <Modified>2015-12-16T03:12:48.412</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\ClrCompression.dll">
       <PackagePath>ClrCompression.dll</PackagePath>
       <Modified>2015-10-20T09:21:50.687</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\entrypoint\App10.exe">
       <PackagePath>entrypoint\App10.exe</PackagePath>
-      <Modified>2015-12-16T02:56:40.020</Modified>
+      <Modified>2015-12-16T03:20:48.823</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -210,7 +226,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-12-16T02:56:41.659</Modified>
+      <Modified>2015-12-16T03:20:49.379</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>

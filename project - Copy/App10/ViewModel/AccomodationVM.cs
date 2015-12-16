@@ -114,7 +114,7 @@ namespace App10.ViewModel
             Success = 100;
             CanBook = true;
             Description = " The first floor has a large lounge area with west views to the countryside and magnificent sunsets, there are two further bedrooms 1 double with en suite and 1 twin bedded with bathroom adjacent. The entire barn exudes a feeling of quality and attention to detail.";
-            ImageUrl = " ../Assets/view.jpg";
+            ImageUrl = " ../Assets/haus2.jpg";
         }
 
         public void SetFour()
@@ -132,7 +132,7 @@ namespace App10.ViewModel
             Success = 100;
             CanBook = true;
             Description = "  There is a large trampoline, numerous swings, slide, undercover table tennis, badminton etc to be found within the beautiful mature floral gardens to amuse children and adults alike.";
-            ImageUrl = " ../Assets/9.jpg";
+            ImageUrl = " ../Assets/view3.jpg";
         }
 
         public void SetSix()
@@ -159,7 +159,7 @@ namespace App10.ViewModel
             Success = 100;
             CanBook = true;
             Description = " This penthouse is located on the top-floor apartment on 7th floor with a stunning, uninterrupted panoramic views over the sea and old Antibes, extending from the Alpes in the North, over the old fort and ports, to the Cap d'Antibes in the South. The view will give you a taste of what old Antibes has to offer. ";
-            ImageUrl = " ../Assets/2.jpg";
+            ImageUrl = " ../Assets/wine.jpg";
         }
 
         public void SetNein()

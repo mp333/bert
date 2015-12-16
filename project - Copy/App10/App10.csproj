@@ -158,11 +158,15 @@
     <Content Include="Assets\apt.jpg" />
     <Content Include="Assets\bed.jpg" />
     <Content Include="Assets\haus.jpg" />
+    <Content Include="Assets\haus2 %281%29.jpg" />
     <Content Include="Assets\index.jpg" />
     <Content Include="Assets\pool.jpg" />
     <Content Include="Assets\Sunset.jpg" />
+    <Content Include="Assets\view.jpg" />
     <Content Include="Assets\view2.jpg" />
+    <Content Include="Assets\view3.jpg" />
     <Content Include="Assets\vila.jpg" />
+    <Content Include="Assets\wine.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

@@ -78,6 +78,9 @@
     <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\Assets\haus.jpg">
       <PackagePath>Assets\haus.jpg</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\Assets\haus2 %281%29.jpg">
+      <PackagePath>Assets\haus2 %281%29.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\Assets\index.jpg">
       <PackagePath>Assets\index.jpg</PackagePath>
     </AppxPackagedFile>
@@ -110,8 +113,14 @@
     <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\Assets\Sunset.jpg">
       <PackagePath>Assets\Sunset.jpg</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\Assets\view.jpg">
+      <PackagePath>Assets\view.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\Assets\view2.jpg">
       <PackagePath>Assets\view2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\Assets\view3.jpg">
+      <PackagePath>Assets\view3.jpg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\Assets\vila.jpg">
       <PackagePath>Assets\vila.jpg</PackagePath>
@@ -119,6 +128,9 @@
     <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\Assets\wine.jpg">
+      <PackagePath>Assets\wine.jpg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\ClrCompression.dll">
       <PackagePath>ClrCompression.dll</PackagePath>

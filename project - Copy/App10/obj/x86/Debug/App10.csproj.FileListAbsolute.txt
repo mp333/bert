@@ -2313,3 +2313,11 @@ C:\Users\pc\Desktop\project - Copy\App10\obj\x86\Debug\Core\Assets\pool.jpg
 C:\Users\pc\Desktop\project - Copy\App10\obj\x86\Debug\Core\Assets\Sunset.jpg
 C:\Users\pc\Desktop\project - Copy\App10\obj\x86\Debug\Core\Assets\view2.jpg
 C:\Users\pc\Desktop\project - Copy\App10\obj\x86\Debug\Core\Assets\vila.jpg
+C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\Assets\haus2 (1).jpg
+C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\Assets\view3.jpg
+C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\Assets\wine.jpg
+C:\Users\pc\Desktop\project - Copy\App10\obj\x86\Debug\Core\Assets\haus2 (1).jpg
+C:\Users\pc\Desktop\project - Copy\App10\obj\x86\Debug\Core\Assets\view3.jpg
+C:\Users\pc\Desktop\project - Copy\App10\obj\x86\Debug\Core\Assets\wine.jpg
+C:\Users\pc\Desktop\project - Copy\App10\bin\x86\Debug\Core\Assets\view.jpg
+C:\Users\pc\Desktop\project - Copy\App10\obj\x86\Debug\Core\Assets\view.jpg
